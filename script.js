@@ -63,6 +63,10 @@ var TRANSLATIONS = {
   "events.huppelaud2024.meta": { et: "5.–9. august  ✳  Viljandi Kutseõppekeskus", en: "5–9 August  ✳  Viljandi Kutseõppekeskus" },
 
   "events.huppelaud2023.alt": { et: "Hüppelaud 2023 osalejad", en: "Hüppelaud 2023 participants" },
+  "events.huppelaud2023.desc": {
+    et: "kood/Jõhvis toimunud seitsmes Hüppelaud toodi ellu koostöös Enter Bootcampiga ning kokku osales üle 80 noore. Nädalasse mahtus nii tõsine tootearendus kui ka väljasõidud — külastati Jõhvi jalaväepataljoni ja rühiti Ahermäele —, samuti ettekanded start-up'i rahastamisest investor Kärt Siilatsiga ja sellest, kuidas teadusprojektist miljardiäri teha (Carmen Kivisild).",
+    en: "The 7th edition of Hüppelaud took place at kood/Jõhvi in partnership with Enter Bootcamp, bringing together over 80 young people. The week mixed serious product-building with field trips — a visit to the Jõhvi infantry battalion and a hike up Ahermäe — plus talks on startup funding with investor Kärt Siilats and on turning a science project into a billion-dollar business with Carmen Kivisild."
+  },
   "events.huppelaud2022.meta": { et: "PROTO Avastustehas, Tallinn", en: "PROTO Invention Factory, Tallinn" },
   "events.huppelaud2021.meta": { et: "Virtuaalne", en: "Online" },
   "events.huppelaud2020.meta": { et: "Virtuaalne", en: "Online" },
