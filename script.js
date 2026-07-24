@@ -83,6 +83,10 @@ var TRANSLATIONS = {
     en: "The 4th Hüppelaud took place in 2020, held entirely online for the first time — everyone met remotely, but with the same energy and ambition as always."
   },
   "events.huppelaud2019.meta": { et: "Tehnopol, Tallinn", en: "Tehnopol, Tallinn" },
+  "events.huppelaud2019.desc": {
+    et: "Tehnopolis toimunud Hüppelaud 2019 pakkus töötubasid esitlusoskustest, andmeanalüüsist, tehisintellektist ja blockchainist ekspertidega nagu Sten Tamkivi, Liis Lepik ja Rene Trisberg. Kolmandaks õhtuks olid valmis juba sellised tooted nagu geomeetriaõpe Math 3D ja õpilasfirmade platvorm Huub, ning SpacierX tiim uuris koguni, kuidas oma raketti orbiidile lennutada — päeva lõpetas ootamatu sportlik vaheldus: kriketimäng Tallinna hipodroomil.",
+    en: "Held at Tehnopol, Hüppelaud 2019 featured workshops on pitching, data analysis, AI, and blockchain with experts like Sten Tamkivi, Liis Lepik, and Rene Trisberg. By the third evening, teams already had working products like the geometry app Math 3D and the student-company platform Huub, while team SpacierX explored how to launch a rocket into orbit — the day wrapped up with an unexpected sporting twist: a cricket match at the Tallinn hippodrome."
+  },
   "events.huppelaud2018.meta": { et: "Lift99, Tallinn", en: "Lift99, Tallinn" },
   "events.huppelaud2017.meta": { et: "Spark Makerlab, Tartu", en: "Spark Makerlab, Tartu" },
   "events.huppelaud2023.meta": { et: "30. juuli – 4. august  ✳  kood/Jõhvi", en: "30 July – 4 August  ✳  kood/Jõhvi" },
