@@ -23,6 +23,8 @@ var TRANSLATIONS = {
   "hero.discord": { et: "Liitu Hüppelaua Discordiga", en: "Join the Hüppelaud Discord" },
 
   "events.register": { et: "Osalema", en: "Register now" },
+  "events.showMore": { et: "Näita rohkem üritusi", en: "Show more events" },
+  "events.showLess": { et: "Näita vähem", en: "Show less" },
 
   "events.huppelaud2026.alt": { et: "Hüppelaud 2026 osalejad", en: "Hüppelaud 2026 participants" },
   "events.huppelaud2026.anniversary": { et: "Juba 10. korda!", en: "10 years running!" },
@@ -211,6 +213,21 @@ document.addEventListener("DOMContentLoaded", function () {
         menu.classList.remove("open");
         hamburger.setAttribute("aria-expanded", "false");
       });
+    });
+  }
+
+  var eventsMore = document.getElementById("eventsMore");
+  var toggleEvents = document.getElementById("toggleEvents");
+  if (eventsMore && toggleEvents) {
+    toggleEvents.addEventListener("click", function () {
+      var isOpen = eventsMore.classList.toggle("open");
+      toggleEvents.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      var key = isOpen ? "events.showLess" : "events.showMore";
+      toggleEvents.setAttribute("data-i18n", key);
+      var lang = document.documentElement.lang === "en" ? "en" : "et";
+      var entry = TRANSLATIONS[key];
+      if (entry) toggleEvents.textContent = entry[lang];
+      if (isOpen) eventsMore.scrollIntoView({ behavior: "smooth", block: "nearest" });
     });
   }
 

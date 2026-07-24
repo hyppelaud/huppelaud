@@ -106,6 +106,13 @@ h3 { font-variation-settings: "wght" 700, "wdth" 120; }
   padding: 13px 26px;
 }
 .btn-ghost-green:hover { background: var(--green-text); color: #fff; opacity: 1; }
+.btn-ghost-blue {
+  background: transparent;
+  color: var(--blue);
+  border: 1.5px solid var(--blue);
+  padding: 13px 26px;
+}
+.btn-ghost-blue:hover { background: var(--blue); color: #fff; opacity: 1; }
 
 /* ---------- Header / Hero ---------- */
 .hero {
@@ -253,6 +260,15 @@ h3 { font-variation-settings: "wght" 700, "wdth" 120; }
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+
+.event-list-more {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+}
+.event-list-more.open { display: flex; }
+
+.events-toggle-wrap { text-align: center; margin-top: 4px; }
 
 .event-info h3 {
   color: var(--card-title, var(--blue));
