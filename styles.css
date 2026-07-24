@@ -252,6 +252,7 @@ h3 { font-variation-settings: "wght" 700, "wdth" 120; }
 }
 
 .event-info .badge { margin-bottom: 10px; align-self: flex-start; }
+.event-info .btn { align-self: flex-start; }
 
 .event-meta {
   color: var(--text-soft);
