@@ -68,6 +68,10 @@ var TRANSLATIONS = {
     en: "The 7th edition of Hüppelaud took place at kood/Jõhvi in partnership with Enter Bootcamp, bringing together over 80 young people. The week mixed serious product-building with field trips — a visit to the Jõhvi infantry battalion and a hike up Ahermäe — plus talks on startup funding with investor Kärt Siilats and on turning a science project into a billion-dollar business with Carmen Kivisild."
   },
   "events.huppelaud2022.meta": { et: "PROTO Avastustehas, Tallinn", en: "PROTO Invention Factory, Tallinn" },
+  "events.huppelaud2022.desc": {
+    et: "PROTO Avastustehases toimunud kuues Hüppelaud tõi kokku 28 ideed, millest moodustati 9 tiimi. Nädala sisse mahtusid ekskursioon Comodule tehasesse tutvumaks Tuul Ride'i e-tõukerataste tootmisega, Vivistopi loovtöötuba toodete viimistlemiseks ning isiklikud inspiratsioonilood Liis Naruskilt ja Björn Koopilt.",
+    en: "The 6th Hüppelaud took place at PROTO Invention Factory, bringing together 28 ideas that turned into 9 teams. The week included a factory tour at Comodule to see Tuul Ride's e-scooter production, a creativity workshop at Vivistop to finish physical products, and personal inspiration talks from Liis Narusk and Björn Koop."
+  },
   "events.huppelaud2021.meta": { et: "Virtuaalne", en: "Online" },
   "events.huppelaud2020.meta": { et: "Virtuaalne", en: "Online" },
   "events.huppelaud2019.meta": { et: "Tehnopol, Tallinn", en: "Tehnopol, Tallinn" },
