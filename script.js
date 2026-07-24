@@ -129,8 +129,8 @@ var TRANSLATIONS = {
   "partners.tier3Name": { et: "Peapartner", en: "Main Partner" },
   "partners.tier3Price": { et: "alates 3500 €", en: "from €3,500" },
   "partners.tier3Benefit1": { et: "Kõik Partneri hüved", en: "Everything in Partner" },
-  "partners.tier3Benefit2": { et: "Kohtunikukoht finaalžüriis", en: "A seat on the final judging panel" },
-  "partners.tier3Benefit3": { et: "Esimesena ligipääs osalejate CV-dele ja portfooliotele", en: "First access to participants' CVs and portfolios" },
+  "partners.tier3Benefit2": { et: "Ettevõtte eripreemia enda valitud meeskonnale", en: "Your own branded award for a team of your choice" },
+  "partners.tier3Benefit3": { et: "Ainuõigus peapartneriks jääda järgmisel aastal", en: "First right of refusal to renew as Main Partner next year" },
 
   "partners.tiersNote": {
     et: "*Hinnad on suunavad — täpsustame koostöövormi koos kohtumisel.",
