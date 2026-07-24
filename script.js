@@ -79,7 +79,7 @@ var TRANSLATIONS = {
   },
   "events.huppelaud2020.meta": { et: "Virtuaalne", en: "Online" },
   "events.huppelaud2020.desc": {
-    et: "2020. aastal toimus juba neljas Hüppelaud, seekord esimest korda täielikult virtuaalselt — kõik said kokku distantsilt, ent seda sama suure indu ja ideedega kui alati.",
+    et: "2020. aastal toimus juba neljas Hüppelaud, seekord esimest korda täielikult virtuaalselt — kõik said kokku distantsilt, ent seda sama suure innu ja ideega kui alati.",
     en: "The 4th Hüppelaud took place in 2020, held entirely online for the first time — everyone met remotely, but with the same energy and ambition as always."
   },
   "events.huppelaud2019.meta": { et: "Tehnopol, Tallinn", en: "Tehnopol, Tallinn" },
