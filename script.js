@@ -103,7 +103,7 @@ var TRANSLATIONS = {
   "partners.badge": { et: "Organisatsioon", en: "Organization" },
   "partners.title": { et: "Teeme koostööd!", en: "Let's work together!" },
   "partners.p1": {
-    et: "Hüppelauaga on 9 aasta jooksul koostööd teinud mitmed ettenägelikud ja väärtustepõhised organisatioonid.",
+    et: "Hüppelauaga on 9 aasta jooksul koostööd teinud mitmed ettenägelikud ja väärtustepõhised organisatsioonid.",
     en: "Over the past 9 years, Hüppelaud has partnered with a range of forward-thinking, values-driven organizations."
   },
   "partners.p2": {
