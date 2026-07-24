@@ -46,8 +46,8 @@ var TRANSLATIONS = {
 
   "events.huppelaud2023.alt": { et: "Hüppelaud 2023 osalejad", en: "Hüppelaud 2023 participants" },
   "events.huppelaud2022.meta": { et: "PROTO Avastustehas, Tallinn", en: "PROTO Invention Factory, Tallinn" },
-  "events.huppelaud2021.meta": { et: "Veebis", en: "Online" },
-  "events.huppelaud2020.meta": { et: "Veebis", en: "Online" },
+  "events.huppelaud2021.meta": { et: "Virtuaalne", en: "Online" },
+  "events.huppelaud2020.meta": { et: "Virtuaalne", en: "Online" },
   "events.huppelaud2019.meta": { et: "Tehnopol, Tallinn", en: "Tehnopol, Tallinn" },
   "events.huppelaud2018.meta": { et: "Lift99, Tallinn", en: "Lift99, Tallinn" },
   "events.huppelaud2017.meta": { et: "Spark Makerlab, Tartu", en: "Spark Makerlab, Tartu" },
