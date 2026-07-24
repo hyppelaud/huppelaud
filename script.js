@@ -35,6 +35,10 @@ var TRANSLATIONS = {
   },
 
   "events.lumelaud2026.alt": { et: "Lumelaud 2026 osalejad", en: "Lumelaud 2026 participants" },
+  "events.lumelaud2026.desc": {
+    et: "Lumelaud 2026 tõi kokku 25 õpilast, kes lõid ajurünnakul 20 ideed ja moodustasid neist 7 meeskonda. Kolme päeva jooksul jagasid oma kogemusi külalisesinejad Karl Kiilaspää (bilt.me) ja Anastasia Pjatakova (Unsume), enne kui meeskonnad esitlesid oma valminud prototüüpe.",
+    en: "Lumelaud 2026 brought together 25 students, who brainstormed 20 ideas and formed 7 teams. Over three days, guest speakers Karl Kiilaspää (bilt.me) and Anastasia Pjatakova (Unsume) shared their experience, before teams presented their finished prototypes."
+  },
   "events.lumelaud2026.meta": { et: "26.–28. veebruar  ✳  ruum Tallinn", en: "26–28 February  ✳  ruum Tallinn" },
 
   "events.huppelaud2025.alt": { et: "Hüppelaud 2025 osalejad", en: "Hüppelaud 2025 participants" },
