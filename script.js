@@ -25,6 +25,7 @@ var TRANSLATIONS = {
   "events.register": { et: "Osalema", en: "Register now" },
 
   "events.huppelaud2026.alt": { et: "Hüppelaud 2026 osalejad", en: "Hüppelaud 2026 participants" },
+  "events.huppelaud2026.anniversary": { et: "Juba 10. korda!", en: "10 years running!" },
   "events.huppelaud2026.meta": { et: "22.–25. juuli  ✳  Sepikoja galerii, Tallinn", en: "22–25 July  ✳  Sepikoja galerii, Tallinn" },
   "events.huppelaud2026.desc": {
     et: "Hüppelaud on ainulaadne tehnoloogia- ja ettevõtluse suvekool, kuhu tulevad kokku noored üle Eesti, et ehitada nelja päeva jooksul ideedest esimesed töötavad prototüübid.",
@@ -64,6 +65,10 @@ var TRANSLATIONS = {
     et: "Vali sobiv summa ja anneta otse — link töötab kõigi Eesti pankade klientidele, olenemata sinu enda pangast.",
     en: "Choose an amount and donate directly — the link works for customers of every Estonian bank, whatever bank you use."
   },
+  "support.taxNote": {
+    et: "Sinu annetus on tulumaksusoodustusega — saad selle oma tuludeklaratsioonis maha arvata.",
+    en: "Your donation is tax-deductible — you can claim it back on your income tax return."
+  },
   "support.recommended": { et: "Soovitatud", en: "Recommended" },
   "support.donateNow": { et: "Anneta nüüd", en: "Donate now" },
   "support.altSummary": { et: "Soovid muud summat või teha makse käsitsi?", en: "Want a different amount, or prefer to pay manually?" },
@@ -87,6 +92,12 @@ var TRANSLATIONS = {
     et: "Loo oma internetipangas korduv makse meie annetuse andmetega — püsitoetusega ootavad sind mitmed boonused!",
     en: "Set up a recurring transfer in your own online bank using our donation details — recurring donors get access to several exclusive perks!"
   },
+  "support.recurring5": { et: "5 €/kuus", en: "€5/month" },
+  "support.recurring10": { et: "10 €/kuus", en: "€10/month" },
+  "support.recurring20": { et: "20 €/kuus", en: "€20/month" },
+  "support.recurringStep1": { et: "Ava oma internetipank", en: "Open your online bank" },
+  "support.recurringStep2": { et: "Loo uus püsimakse (otsekorraldus)", en: "Create a new recurring payment (standing order)" },
+  "support.recurringStep3": { et: "Sisesta meie annetuse andmed", en: "Enter our donation details" },
   "support.recurringCta": { et: "Vaata pangaandmeid", en: "View bank details" },
 
   "partners.badge": { et: "Organisatsioon", en: "Organization" },

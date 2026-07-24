@@ -251,6 +251,8 @@ h3 { font-variation-settings: "wght" 700, "wdth" 120; }
   margin-bottom: 8px;
 }
 
+.event-info .badge { margin-bottom: 10px; }
+
 .event-meta {
   color: var(--text-soft);
   font-size: 15px;
@@ -287,6 +289,7 @@ h3 { font-variation-settings: "wght" 700, "wdth" 120; }
 }
 .badge-green { background: var(--sage-badge); }
 .badge-olive { background: var(--olive-badge); }
+.badge-blue { background: var(--blue); }
 
 .support-title { color: var(--green-text); margin-bottom: 20px; }
 .partners-title { color: var(--olive-badge); margin-bottom: 20px; }
@@ -378,6 +381,40 @@ h3 { font-variation-settings: "wght" 700, "wdth" 120; }
   margin-bottom: 16px;
 }
 
+.recurring-amounts {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.chip-amount {
+  flex: 1;
+  text-align: center;
+  background: #fff;
+  border: 1.5px solid rgba(65, 103, 70, 0.25);
+  border-radius: 100px;
+  padding: 8px 6px;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--green-text);
+}
+
+.chip-amount--featured {
+  background: var(--green-text);
+  border-color: var(--green-text);
+  color: #fff;
+}
+
+.recurring-steps {
+  margin: 0 0 16px;
+  padding-left: 20px;
+  color: rgba(0,0,0,0.65);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.recurring-steps li { margin-bottom: 4px; }
+.recurring-steps li:last-child { margin-bottom: 0; }
+
 .support-donate h3 {
   font-size: 20px;
   color: var(--green-text);
@@ -431,6 +468,21 @@ h3 { font-variation-settings: "wght" 700, "wdth" 120; }
   font-size: 15px;
   margin-bottom: 20px;
 }
+
+.donate-tax-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--green-text);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 100px;
+  margin-bottom: 24px;
+}
+
+.tax-note-icon { flex: none; }
 
 .donate-tiers {
   display: grid;
