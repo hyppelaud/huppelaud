@@ -42,9 +42,17 @@ var TRANSLATIONS = {
   "events.lumelaud2026.meta": { et: "26.–28. veebruar  ✳  ruum Tallinn", en: "26–28 February  ✳  ruum Tallinn" },
 
   "events.huppelaud2025.alt": { et: "Hüppelaud 2025 osalejad", en: "Hüppelaud 2025 participants" },
+  "events.huppelaud2025.desc": {
+    et: "Kuressaares kogunes 13 meeskonda, kes ehitasid 53 ideest välja põnevaid prototüüpe — alates tulega tuld kustutavast seadmest (Fyreball) kuni merekaablite vigastusi tuvastava lahenduseni (CUV). Nädala jooksul jagasid kogemusi 15 mentorit ja külalisesinejad Boltist, Modashist ja Lightyearist, ning osalejad hindasid suvekooli rekordiliste 9,3 punktiga kümnest.",
+    en: "In Kuressaare, 13 teams turned 53 ideas into working prototypes — from a fire extinguisher that puts out fire with fire (Fyreball) to a solution for detecting underwater cable damage (CUV). Over the week, 15 mentors and guest speakers from Bolt, Modash, and Lightyear shared their experience, and participants rated the summer school a record 9.3 out of 10."
+  },
   "events.huppelaud2025.meta": { et: "3.–8. august  ✳  Kuressaare Ametikool", en: "3–8 August  ✳  Kuressaare Ametikool" },
 
   "events.lumelaud2025.alt": { et: "Lumelaud 2025 osalejad", en: "Lumelaud 2025 participants" },
+  "events.lumelaud2025.desc": {
+    et: "Kolmepäevasele Lumelaudale Vabamus tulid külla ka Soome organisatsiooni FinEst Future esindajad. Osalejad tutvusid Ampler Bike'i tootmisega ja said proovida VR-töötuba, enne kui viis meeskonda esitlesid oma valmis tooted — linnaruumi parandava kaardirakenduse Citymaxxing, toidu aegumist jälgiva Rimi laienduse, virtuaalse riietuse proovimise rakenduse Style Snap, teismeliste ajaplaneerimise abilise Zzzchedule ja õrnalt äratava unimaski LUMEA.",
+    en: "Vabamu hosted the three-day Lumelaud winter school, joined by guests from Finland's FinEst Future. Participants toured Ampler Bike's production plant and tried a VR workshop, before five teams demoed their finished products — the city-improvement map Citymaxxing, food-expiry tracker Rimi App Extension, virtual outfit try-on Style Snap, teen time-management tool Zzzchedule, and gentle wake-up mask LUMEA."
+  },
   "events.lumelaud2025.meta": { et: "26.–28. veebruar  ✳  Vabamu", en: "26–28 February  ✳  Vabamu" },
 
   "events.huppelaud2024.alt": { et: "Hüppelaud 2024 osalejad", en: "Hüppelaud 2024 participants" },
