@@ -56,6 +56,10 @@ var TRANSLATIONS = {
   "events.lumelaud2025.meta": { et: "26.–28. veebruar  ✳  Vabamu", en: "26–28 February  ✳  Vabamu" },
 
   "events.huppelaud2024.alt": { et: "Hüppelaud 2024 osalejad", en: "Hüppelaud 2024 participants" },
+  "events.huppelaud2024.desc": {
+    et: "Viljandi Kutseõppekeskuses veetsid osalejad nädala ehitades — arvuti, õmblusmasina ja treipingi taga — ning käisid õppimas Clevoni autonoomsete pakiautode tehases ja matkamas Ennuksemäel. Lõpuesitlustel said kõik kooskonnad oma tooted valmis, kui üllatuskülalisena jagas Bolti asutaja Markus Villig lugu, kuidas ta ettevõtte veel kooliõpilasena 5000-eurose laenuga käima lükkas.",
+    en: "At Viljandi Vocational Training Centre, participants spent the week building — at computers, sewing machines, and lathes — and visited Clevon's autonomous delivery-robot factory and went hiking at Ennuksemäe. Every team finished their product for the final demos, where a surprise guest, Bolt founder Markus Villig, shared how he launched the company as a student with a €5,000 loan from his parents."
+  },
   "events.huppelaud2024.meta": { et: "5.–9. august  ✳  Viljandi Kutseõppekeskus", en: "5–9 August  ✳  Viljandi Kutseõppekeskus" },
 
   "events.huppelaud2023.alt": { et: "Hüppelaud 2023 osalejad", en: "Hüppelaud 2023 participants" },
