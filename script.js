@@ -73,7 +73,15 @@ var TRANSLATIONS = {
     en: "The 6th Hüppelaud took place at PROTO Invention Factory, bringing together 28 ideas that turned into 9 teams. The week included a factory tour at Comodule to see Tuul Ride's e-scooter production, a creativity workshop at Vivistop to finish physical products, and personal inspiration talks from Liis Narusk and Björn Koop."
   },
   "events.huppelaud2021.meta": { et: "Virtuaalne", en: "Online" },
+  "events.huppelaud2021.desc": {
+    et: "Veebis toimunud Hüppelaud 2021 nägi nelja päevaga sündimas vaimukaid maailma paremaks muutvaid tooteid. Teisel päeval jagati teadmisi no-code tööriistadest, krüptomaailma turvalisusest ja kasutajauuringute antropoloogilistest meetoditest, mõned tiimid tegid koguni pivoti. Mentorid pidasid kõnesid lausa lennujaamast, mägedest ja paadiretkelt.",
+    en: "Held entirely online, Hüppelaud 2021 saw witty, world-improving products come together in just four days. Day two brought talks on no-code tools, staying safe in the world of crypto, and anthropological methods for user research — some teams even pivoted mid-week. Mentors gave their talks from airports, mountains, and boat trips."
+  },
   "events.huppelaud2020.meta": { et: "Virtuaalne", en: "Online" },
+  "events.huppelaud2020.desc": {
+    et: "2020. aastal toimus juba neljas Hüppelaud, seekord esimest korda täielikult virtuaalselt — kõik said kokku distantsilt, ent seda sama suure indu ja ideedega kui alati.",
+    en: "The 4th Hüppelaud took place in 2020, held entirely online for the first time — everyone met remotely, but with the same energy and ambition as always."
+  },
   "events.huppelaud2019.meta": { et: "Tehnopol, Tallinn", en: "Tehnopol, Tallinn" },
   "events.huppelaud2018.meta": { et: "Lift99, Tallinn", en: "Lift99, Tallinn" },
   "events.huppelaud2017.meta": { et: "Spark Makerlab, Tartu", en: "Spark Makerlab, Tartu" },
