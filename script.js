@@ -114,6 +114,44 @@ var TRANSLATIONS = {
   "partners.label2026": { et: "Partnerid 2026", en: "2026 Partners" },
   "partners.labelPast": { et: "Senised partnerid ja toetajad", en: "Past partners and supporters" },
 
+  "partners.tier1Name": { et: "Toetaja", en: "Supporter" },
+  "partners.tier1Price": { et: "alates 500 €", en: "from €500" },
+  "partners.tier1Benefit1": { et: "Logo veebilehel ja üritusmaterjalidel", en: "Logo on the website and event materials" },
+
+  "partners.tier2Badge": { et: "Populaarseim", en: "Most popular" },
+  "partners.tier2Name": { et: "Partner", en: "Partner" },
+  "partners.tier2Price": { et: "alates 1500 €", en: "from €1,500" },
+  "partners.tier2Benefit1": { et: "Kõik Toetaja hüved", en: "Everything in Supporter" },
+  "partners.tier2Benefit2": { et: "Logo ja mainimine sotsiaalmeedias", en: "Logo and mention on social media" },
+  "partners.tier2Benefit3": { et: "Mentori koht üritusel", en: "A mentor seat at the event" },
+  "partners.tier2Benefit4": { et: "Võimalus pakkuda meeskondadele väljakutse teema", en: "Option to set a challenge topic for teams" },
+
+  "partners.tier3Name": { et: "Peapartner", en: "Main Partner" },
+  "partners.tier3Price": { et: "alates 3500 €", en: "from €3,500" },
+  "partners.tier3Benefit1": { et: "Kõik Partneri hüved", en: "Everything in Partner" },
+  "partners.tier3Benefit2": { et: "Kohtunikukoht finaalžüriis", en: "A seat on the final judging panel" },
+  "partners.tier3Benefit3": { et: "Esimesena ligipääs osalejate CV-dele ja portfooliotele", en: "First access to participants' CVs and portfolios" },
+
+  "partners.tiersNote": {
+    et: "*Hinnad on suunavad — täpsustame koostöövormi koos kohtumisel.",
+    en: "*Prices are indicative — we'll tailor the details together."
+  },
+
+  "buyout.badge": { et: "Koolidele ja ettevõtetele", en: "For schools and companies" },
+  "buyout.title": { et: "Telli oma Hoosloome!", en: "Book your own Hoosloome!" },
+  "buyout.p1": {
+    et: "Soovid pakkuda oma õpilastele või meeskonnale sama kogemust, mida oleme loonud sadadele noortele üle Eesti? Toome meie tõestatud formaadi, mentorid ja korralduse otse teie juurde.",
+    en: "Want to give your students or team the same experience we've built for hundreds of young people across Estonia? We bring our proven format, mentors, and organization directly to you."
+  },
+  "buyout.p2": {
+    et: "Sobib koolidele ja ülikoolidele õppepäevaks, ning ettevõtetele meeskonnapäevaks või innovatsiooniüritusteks.",
+    en: "A great fit for schools and universities as a learning day, or for companies as a team-building or innovation event."
+  },
+  "buyout.feature1": { et: "Täisformaat: ideest töötava prototüübini mõne päevaga", en: "Full format: from idea to working prototype in a few days" },
+  "buyout.feature2": { et: "Meie kogenud mentorid ja korraldusmeeskond", en: "Our experienced mentors and organizing team" },
+  "buyout.feature3": { et: "Teemad ja väljakutsed kohandatud vastavalt teie soovile", en: "Topics and challenges tailored to what you need" },
+  "buyout.cta": { et: "Küsi hinda", en: "Request a quote" },
+
   "footer.address": { et: "Narva mnt 26, Tallinn, Eesti", en: "Narva mnt 26, Tallinn, Estonia" },
   "footer.regNr": { et: "Reg nr. 80651415", en: "Reg. no. 80651415" }
 };
