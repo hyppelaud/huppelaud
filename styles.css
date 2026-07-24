@@ -245,6 +245,9 @@ h3 { font-variation-settings: "wght" 700, "wdth" 120; }
 }
 .event-photo img { width: 100%; height: 100%; object-fit: cover; }
 
+.event-list .event-card--compact { padding: 18px 22px; }
+.event-list .event-card--compact .event-info { padding: 0; }
+
 .event-info h3 {
   color: var(--card-title, var(--blue));
   font-size: 22px;
