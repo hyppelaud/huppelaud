@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hüppelaud Dinner</title>
+<meta name="description" content="RSVP for the Hüppelaud dinner — pick your dates, dietary needs, and menu.">
+<link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  .dinner-section {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 90px 20px 60px;
+  }
+
+  .dinner-card {
+    background: var(--card-bg, var(--green-bg));
+    border-radius: var(--radius-lg);
+    padding: 32px 28px;
+    margin-bottom: 24px;
+  }
+
+  .dinner-card h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .dinner-dates {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .dinner-dates li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: #fff;
+    border-radius: 100px;
+    padding: 12px 20px;
+    font-weight: 500;
+  }
+
+  .dinner-dates .day {
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .dinner-dates .badge {
+    margin-left: auto;
+    margin-bottom: 0;
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+
+  .dinner-note {
+    font-size: 15px;
+    color: var(--text-soft);
+    margin: 20px 0 0;
+  }
+
+  .dinner-details {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 12px 24px;
+    margin: 0;
+  }
+  .dinner-details dt {
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--blue);
+    white-space: nowrap;
+  }
+  .dinner-details dd {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .dinner-fine {
+    margin-top: 14px;
+    font-size: 14px;
+    color: var(--text-soft);
+  }
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <nav class="navbar">
+    <a href="../" class="logo" aria-label="Hüppelaud avaleht">
+      <img src="../assets/images/logo.svg" alt="Hüppelaud">
+    </a>
+  </nav>
+
+  <div class="hero-content">
+    <span class="badge badge-blue">You're invited</span>
+    <h1>Hüppelaud Dinner</h1>
+    <p class="hero-text">One last dinner before summer packs its bags.</p>
+    <div class="hero-buttons">
+      <a href="#" class="btn btn-primary" id="rsvp-link">RSVP &amp; pick your dates</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="dinner-section" id="rsvp">
+
+    <div class="dinner-card" style="--card-bg: var(--green-bg);">
+      <h2>Candidate dates</h2>
+      <ul class="dinner-dates">
+        <li><span class="day">Fri, Aug 28</span><span class="badge badge-green">Late Aug</span></li>
+        <li><span class="day">Sat, Aug 29</span><span class="badge badge-green">Late Aug</span></li>
+        <li><span class="day">Sun, Aug 30</span><span class="badge badge-green">Late Aug</span></li>
+        <li><span class="day">Fri, Sep 4</span><span class="badge badge-olive">Early Sep</span></li>
+        <li><span class="day">Sat, Sep 5</span><span class="badge badge-olive">Early Sep</span></li>
+      </ul>
+      <p class="dinner-note">Mark every date that works for you — we'll settle on the one that fits the most people.</p>
+    </div>
+
+    <div class="dinner-card" style="--card-bg: var(--hero-bg);">
+      <h2>Good to know</h2>
+      <dl class="dinner-details">
+        <dt>When</dt>
+        <dd>One evening, late Aug &ndash; early Sep (see above)</dd>
+        <dt>Where</dt>
+        <dd>To follow once the date is set</dd>
+        <dt>Menu</dt>
+        <dd>A few mains to choose from — pick yours in the RSVP</dd>
+      </dl>
+    </div>
+
+    <div class="center" style="margin-top: 40px;">
+      <a href="#" class="btn btn-primary" id="rsvp-link-2">RSVP &amp; pick your dates</a>
+      <p class="dinner-fine">Takes about a minute. Replies help us lock the date.</p>
+    </div>
+
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <img src="../assets/images/logo.svg" alt="Hüppelaud" class="footer-logo">
+    <div class="footer-address">
+      <p>Hüppelaud MTÜ</p>
+      <p>Narva mnt 26, Tallinn, Eesti</p>
+      <p>Reg nr. 80651415</p>
+      <p><a href="mailto:tere@huppelaud.eu">tere@huppelaud.eu</a></p>
+    </div>
+  </div>
+  <p class="footer-copy">© 2026 Hüppelaud</p>
+</footer>
+
+</body>
+</html>
