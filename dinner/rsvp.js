@@ -1,6 +1,6 @@
 (function () {
   // Set after deploying the Apps Script Web App (see Code.gs / deploy instructions).
-  var SCRIPT_URL = "REPLACE_WITH_APPS_SCRIPT_WEB_APP_URL";
+  var SCRIPT_URL = "https://script.google.com/macros/s/AKfycby8TaLgMi6KIJ41ed4Ol5toUDG-zuXKIvTdWFwlS9jgubqMPNc1OhCcxS1wNlQ6gt8/exec";
 
   var DAY_LABELS = {
     "2026-08-25": "Tue, Aug 25",
