@@ -157,6 +157,18 @@
     margin: 0 0 16px;
   }
 
+  .form-success {
+    color: var(--green-text);
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 16px;
+  }
+
+  #submitBtn:disabled {
+    opacity: 0.7;
+    cursor: default;
+  }
+
   .dinner-fine {
     margin-top: 14px;
     font-size: 14px;
@@ -251,9 +263,10 @@
       </div>
 
       <p class="form-error" id="formError" hidden>Please add your name and pick at least one evening.</p>
+      <p class="form-success" id="formSuccess" hidden>Thanks — your RSVP is in! 🎉</p>
 
       <button type="button" class="btn btn-primary" id="submitBtn" style="width: 100%; justify-content: center;">Send my RSVP</button>
-      <p class="dinner-fine">Opens your email app with your answers filled in — just hit send.</p>
+      <p class="dinner-fine">Goes straight into our RSVP list — no email needed.</p>
     </div>
 
   </section>
