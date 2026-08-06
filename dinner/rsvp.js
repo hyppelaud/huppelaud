@@ -3,7 +3,6 @@
   var SCRIPT_URL = "REPLACE_WITH_APPS_SCRIPT_WEB_APP_URL";
 
   var DAY_LABELS = {
-    "2026-08-24": "Mon, Aug 24",
     "2026-08-25": "Tue, Aug 25",
     "2026-08-26": "Wed, Aug 26",
     "2026-08-27": "Thu, Aug 27",
