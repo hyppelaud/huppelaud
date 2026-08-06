@@ -11,27 +11,27 @@ var TRANSLATIONS = {
   "nav.langAria": { et: "Vali keel", en: "Select language" },
   "nav.openMenu": { et: "Ava menüü", en: "Open menu" },
   "nav.events": { et: "Üritused", en: "Events" },
+  "nav.team": { et: "Meeskond", en: "Team" },
   "nav.support": { et: "Toetajad", en: "Support" },
   "nav.cta": { et: "Osale", en: "Join" },
-  "nav.donate": { et: "Anneta", en: "Donate" },
+  "nav.donate": { et: "Toeta", en: "Donate" },
 
-  "hero.title": { et: "Hoosloomed noortele", en: "Build sprints for young people" },
+  "hero.title": { et: "Hoosloomed noortele", en: "Build sprints for young talent" },
   "hero.text": {
     et: "Tule avasta tehnoloogia- ja ettevõtlusmaailma ning õpi kuidas ehitada päevadega töötav prototüüp!",
     en: "Come discover the world of technology and entrepreneurship, and learn how to build a working prototype in just a few days!"
   },
   "hero.discord": { et: "Liitu Hüppelaua Discordiga", en: "Join the Hüppelaud Discord" },
 
-  "events.register": { et: "Osalema", en: "Register now" },
   "events.showMore": { et: "Näita rohkem üritusi", en: "Show more events" },
   "events.showLess": { et: "Näita vähem", en: "Show less" },
 
   "events.huppelaud2026.alt": { et: "Hüppelaud 2026 osalejad", en: "Hüppelaud 2026 participants" },
-  "events.huppelaud2026.anniversary": { et: "Juba 10. korda!", en: "10 years running!" },
+  "events.huppelaud2026.anniversary": { et: "Juba 10. korda", en: "10 years running" },
   "events.huppelaud2026.meta": { et: "22.–25. juuli  ✳  Sepikoja galerii, Tallinn", en: "22–25 July  ✳  Sepikoja galerii, Tallinn" },
   "events.huppelaud2026.desc": {
-    et: "Hüppelaud on ainulaadne tehnoloogia- ja ettevõtluse suvekool, kuhu tulevad kokku noored üle Eesti, et ehitada nelja päeva jooksul ideedest esimesed töötavad prototüübid.",
-    en: "Hüppelaud is a unique technology and entrepreneurship summer school, where young people from all over Estonia come together to build their first working prototypes from ideas in four days."
+    et: "Juba kümnendat korda toimunud Hüppelaud kogus 22.–25. juulini Tallinna Sepikoja galeriisse ligi 60 14–19-aastast noort, kes moodustasid nelja päevaga 14 meeskonda ja ehitasid ideedest esimesed töötavad prototüübid. Nädala jooksul jagasid kogemusi 13 mentorit tööstusest ja teadusest, külalisesinejana astus üles geneetik Lili Milani ning külastati ka Wise'i kontorit.",
+    en: "Now in its 10th year, Hüppelaud brought together nearly 60 14–19 year-olds at Sepikoja galerii in Tallinn from July 22–25, who formed 14 teams over four days and built their first working prototypes from ideas. Throughout the week, 13 mentors from industry and academia shared their experience, geneticist Lili Milani spoke as a guest speaker, and the group visited Wise's office."
   },
 
   "events.lumelaud2026.alt": { et: "Lumelaud 2026 osalejad", en: "Lumelaud 2026 participants" },
@@ -91,6 +91,24 @@ var TRANSLATIONS = {
   "events.huppelaud2017.meta": { et: "Spark Makerlab, Tartu", en: "Spark Makerlab, Tartu" },
   "events.huppelaud2023.meta": { et: "30. juuli – 4. august  ✳  kood/Jõhvi", en: "30 July – 4 August  ✳  kood/Jõhvi" },
 
+  "team.title": { et: "Suhtleme!", en: "Let's connect!" },
+  "team.intro": {
+    et: "Hüppelaud on paljude inimeste ühine töö — siin tutvustan end mina, Hüppelaua peakorraldaja, kelle elu see suvekool kunagi muutis ja kes nüüd annab sama kogemuse edasi järgmisele põlvkonnale.",
+    en: "Hüppelaud is the work of many hands — here I introduce myself, Hüppelaud's head organizer, whose own life was changed by this summer school and who now passes that same experience on to the next generation."
+  },
+  "team.mihkel.role": { et: "Peakorraldaja", en: "Head Organizer" },
+  "team.mihkel.tag1": { et: "Osaleja 2018–2019", en: "Participant 2018–2019" },
+  "team.mihkel.tag2": { et: "Mentor 2024–2025", en: "Mentor 2024–2025" },
+  "team.mihkel.tag3": { et: "Korraldaja alates 2026", en: "Organizer since 2026" },
+  "team.mihkel.bio": {
+    et: "Hüppelaud muutis minu elu ja tõi mind kokku startup-maailmaga. Osalesin ise 2018. ja 2019. aastal, olin mentor 2024. ja 2025. aastal ning alates 2026. aastast vean korraldusmeeskonda. Olen õppinud TUMis Saksamaal ja TU Delftis Hollandis, olnud kaasas mitme idufirma loomisel ning kannan Wise'i „20 Under 20“ (2020) tiitlit. Praegu töötan SYNLABis.",
+    en: "Hüppelaud changed my life and got me into startups. I took part myself in 2018 and 2019, mentored in 2024 and 2025, and have led the organizing team since 2026. I studied at TUM in Germany and TU Delft in the Netherlands, have helped build multiple startups, and am a Wise 20 Under 20 (2020) alumnus. I currently work at SYNLAB."
+  },
+  "team.mihkel.credentials": {
+    et: "TUM & TU Delft  ✳  Wise 20 Under 20 (2020)  ✳  Praegu SYNLABis",
+    en: "TUM & TU Delft  ✳  Wise 20 Under 20 (2020)  ✳  Currently at SYNLAB"
+  },
+
   "support.badge": { et: "Lapsevanem", en: "Parent" },
   "support.title": { et: "Toeta meid!", en: "Support us!" },
   "support.p1": {
@@ -106,7 +124,7 @@ var TRANSLATIONS = {
     en: "Together, let's grow Estonia's next generation of inventors and doers!"
   },
   "support.donateLead": {
-    et: "Vali sobiv summa ja anneta otse — link töötab kõigi Eesti pankade klientidele, olenemata sinu enda pangast.",
+    et: "Vali sobiv summa ja toeta otse — link töötab kõigi Eesti pankade klientidele, olenemata sinu enda pangast.",
     en: "Choose an amount and donate directly — the link works for customers of every Estonian bank, whatever bank you use."
   },
   "support.taxNote": {
@@ -114,7 +132,7 @@ var TRANSLATIONS = {
     en: "Your donation is tax-deductible — you can claim it back on your income tax return."
   },
   "support.recommended": { et: "Soovitatud", en: "Recommended" },
-  "support.donateNow": { et: "Anneta nüüd", en: "Donate now" },
+  "support.donateNow": { et: "Toeta nüüd", en: "Donate now" },
   "support.altSummary": { et: "Soovid muud summat või teha makse käsitsi?", en: "Want a different amount, or prefer to pay manually?" },
   "support.labelBank": { et: "Pank", en: "Bank" },
   "support.labelRecipient": { et: "Saaja", en: "Recipient" },
