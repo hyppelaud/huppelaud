@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hüppelaud Dinner</title>
+<meta name="description" content="RSVP for the Hüppelaud dinner — pick your evenings, dietary needs, and menu.">
+<link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 28px;
+    }
+  }
+
+  .dinner-section {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 90px 20px 60px;
+  }
+
+  .dinner-card {
+    background: var(--card-bg, var(--green-bg));
+    border-radius: var(--radius-lg);
+    padding: 32px 28px;
+    margin-bottom: 24px;
+  }
+
+  .dinner-card h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .dinner-details {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 12px 24px;
+    margin: 0;
+  }
+  .dinner-details dt {
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--blue);
+    white-space: nowrap;
+  }
+  .dinner-details dd {
+    margin: 0;
+    font-size: 16px;
+  }
+  .dinner-details dd a {
+    color: var(--blue);
+    text-decoration: underline;
+  }
+
+  .field { margin-bottom: 28px; }
+  .field:last-of-type { margin-bottom: 16px; }
+  .field label {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: var(--text);
+  }
+  .field-hint {
+    font-weight: 500;
+    color: var(--text-soft);
+    font-size: 13px;
+  }
+
+  #name {
+    width: 100%;
+    padding: 13px 18px;
+    border-radius: 100px;
+    border: 1.5px solid rgba(0, 0, 0, 0.12);
+    font: inherit;
+    font-size: 15px;
+    box-sizing: border-box;
+    background: #fff;
+  }
+  #name:focus { outline: none; border-color: var(--blue); }
+
+  .avail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(82px, 1fr));
+    gap: 10px;
+  }
+  .avail-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 14px 6px;
+    border-radius: var(--radius-md);
+    border: 1.5px solid rgba(0, 0, 0, 0.12);
+    background: #fff;
+    font-family: "Open Sauce Sans", sans-serif;
+    color: var(--text);
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  }
+  .avail-day .dow {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-soft);
+  }
+  .avail-day .dnum {
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .avail-day:hover { border-color: var(--blue); }
+  .avail-day.selected {
+    background: var(--blue);
+    border-color: var(--blue);
+    color: #fff;
+  }
+  .avail-day.selected .dow { color: rgba(255, 255, 255, 0.8); }
+
+  .menu-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .menu-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fff;
+    border-radius: 100px;
+    padding: 12px 20px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1.5px solid transparent;
+  }
+  .menu-option:has(input:checked) { border-color: var(--blue); }
+  .menu-option input { accent-color: var(--blue); width: 16px; height: 16px; }
+  .menu-option .tag {
+    margin-left: auto;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--green-text);
+    background: var(--green-bg);
+    padding: 4px 10px;
+    border-radius: 100px;
+  }
+
+  .dinner-note {
+    font-size: 14px;
+    color: var(--text-soft);
+    margin: 12px 0 0;
+  }
+
+  .form-error {
+    color: #c0392b;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 16px;
+  }
+
+  .form-success {
+    color: var(--green-text);
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 16px;
+  }
+
+  #submitBtn:disabled {
+    opacity: 0.7;
+    cursor: default;
+  }
+
+  .dinner-fine {
+    margin-top: 14px;
+    font-size: 14px;
+    color: var(--text-soft);
+    text-align: center;
+  }
+
+  .dinner-intro {
+    max-width: 52ch;
+    margin: 0 auto 32px;
+    text-align: center;
+    font-size: 17px;
+    color: var(--text-soft);
+  }
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <nav class="navbar">
+    <a href="../" class="logo" aria-label="Hüppelaud avaleht">
+      <img src="../assets/images/logo.svg" alt="Hüppelaud">
+    </a>
+  </nav>
+
+  <div class="hero-content">
+    <span class="badge badge-blue">You're invited</span>
+    <h1>Hüppelaud Dinner</h1>
+    <p class="hero-text">One last dinner before summer packs its bags.</p>
+    <div class="hero-buttons">
+      <a href="#rsvp" class="btn btn-primary">Sign up</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="dinner-section">
+
+    <p class="dinner-intro">Hüppelaud 2026 was a wild success — four days, dozens of teams, and more working prototypes than we expected. Before the year moves on, we want to bring together everyone who helped make it happen: mentors, organizers, partners, and everyone else who backed us along the way. One evening to catch up, swap stories from the summer, and talk about what's next for Hüppelaud.</p>
+
+    <div class="dinner-card" style="--card-bg: var(--hero-bg);">
+      <h2>Good to know</h2>
+      <dl class="dinner-details">
+        <dt>When</dt>
+        <dd>One evening, last week of August &mdash; pick your evenings below</dd>
+        <dt>Where</dt>
+        <dd><a href="https://altoresto.ee/" target="_blank" rel="noopener">Alto Resto</a>, Paldiski mnt 25&ndash;2, Tallinn (Mayeri Ärikvartal)</dd>
+        <dt>Menu</dt>
+        <dd>Pick your main below</dd>
+      </dl>
+    </div>
+
+    <div class="dinner-card" id="rsvp" style="--card-bg: var(--green-bg);">
+      <h2>Sign up</h2>
+
+      <div class="field">
+        <label for="name">Your name</label>
+        <input type="text" id="name" placeholder="Jane Tamm" autocomplete="name">
+      </div>
+
+      <div class="field">
+        <label>Which evenings work? <span class="field-hint">(last week of August, from 6pm)</span></label>
+        <div class="avail-grid" id="availGrid">
+          <button type="button" class="avail-day" data-date="2026-08-25" aria-pressed="false"><span class="dow">Tue</span><span class="dnum">25</span></button>
+          <button type="button" class="avail-day" data-date="2026-08-26" aria-pressed="false"><span class="dow">Wed</span><span class="dnum">26</span></button>
+          <button type="button" class="avail-day" data-date="2026-08-27" aria-pressed="false"><span class="dow">Thu</span><span class="dnum">27</span></button>
+          <button type="button" class="avail-day" data-date="2026-08-28" aria-pressed="false"><span class="dow">Fri</span><span class="dnum">28</span></button>
+          <button type="button" class="avail-day" data-date="2026-08-29" aria-pressed="false"><span class="dow">Sat</span><span class="dnum">29</span></button>
+          <button type="button" class="avail-day" data-date="2026-08-30" aria-pressed="false"><span class="dow">Sun</span><span class="dnum">30</span></button>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Main course</label>
+        <div class="menu-options" id="menuOptions">
+          <label class="menu-option">
+            <input type="radio" name="menu" value="Herb-Crusted Salmon">
+            Herb-Crusted Salmon
+          </label>
+          <label class="menu-option">
+            <input type="radio" name="menu" value="Wild Mushroom Risotto">
+            Wild Mushroom Risotto
+            <span class="tag">Veg</span>
+          </label>
+          <label class="menu-option">
+            <input type="radio" name="menu" value="Braised Short Rib">
+            Braised Short Rib
+          </label>
+        </div>
+        <p class="dinner-note">Placeholder menu — final dishes to follow.</p>
+      </div>
+
+      <p class="form-error" id="formError" hidden>Please add your name and pick at least one evening.</p>
+      <p class="form-success" id="formSuccess" hidden>Thanks — your RSVP is in! 🎉</p>
+
+      <button type="button" class="btn btn-primary" id="submitBtn" style="width: 100%; justify-content: center;">Send my RSVP</button>
+      <p class="dinner-fine">Goes straight into our RSVP list — no email needed.</p>
+    </div>
+
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <img src="../assets/images/logo.svg" alt="Hüppelaud" class="footer-logo">
+    <div class="footer-address">
+      <p>Hüppelaud MTÜ</p>
+      <p>Narva mnt 26, Tallinn, Eesti</p>
+      <p>Reg nr. 80651415</p>
+      <p><a href="mailto:tere@huppelaud.eu">tere@huppelaud.eu</a></p>
+    </div>
+  </div>
+  <p class="footer-copy">© 2026 Hüppelaud</p>
+</footer>
+
+<script src="rsvp.js" defer></script>
+</body>
+</html>
