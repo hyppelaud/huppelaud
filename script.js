@@ -16,6 +16,13 @@ var TRANSLATIONS = {
   "nav.cta": { et: "Osale", en: "Join" },
   "nav.donate": { et: "Toeta", en: "Donate" },
 
+  "cookie.text": {
+    et: "Kasutame Google Analyticsit, et mõista, kui palju külastajaid meil käib ja millised leheküljed neid huvitavad. Kas lubad seda?",
+    en: "We use Google Analytics to understand how many visitors we get and which pages interest them. Is that okay with you?"
+  },
+  "cookie.accept": { et: "Nõustun", en: "Accept" },
+  "cookie.decline": { et: "Keeldun", en: "Decline" },
+
   "hero.title": { et: "Hoosloomed noortele", en: "Build sprints for young talent" },
   "hero.text": {
     et: "Tule avasta tehnoloogia- ja ettevõtlusmaailma ning õpi kuidas ehitada päevadega töötav prototüüp!",

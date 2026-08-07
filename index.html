@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<header class="hero" id="top">
+<header class="hero" id="top" data-track-section="hero">
   <nav class="navbar">
     <a href="#top" class="logo" data-i18n-aria="nav.logoAria" aria-label="Hüppelaud avaleht">
       <img src="assets/images/logo.svg" alt="Hüppelaud">
@@ -56,7 +56,7 @@
 
 <main>
 
-  <section class="events" id="events">
+  <section class="events" id="events" data-track-section="events">
     <h2 class="section-title center" data-i18n="nav.events">Üritused</h2>
 
     <div class="event-list">
@@ -184,7 +184,7 @@
     </div>
   </section>
 
-  <section class="support" id="contribute">
+  <section class="support" id="contribute" data-track-section="contribute">
     <span class="badge badge-green" data-i18n="support.badge">Lapsevanem</span>
     <div class="support-grid">
       <div class="support-copy">
@@ -214,7 +214,7 @@
           <cite data-i18n="support.testimonialAttribution">— Hüppelaua osaleja, 2017</cite>
         </blockquote>
       </div>
-      <div class="support-donate" id="donate">
+      <div class="support-donate" id="donate" data-track-section="donate">
         <h3 data-i18n="support.donateHeading">Kasvatame koos Eestile järgmise põlvkonna leiutajaid ja tegijaid!</h3>
         <p class="donate-lead" data-i18n="support.donateLead">Vali sobiv summa ja anneta otse — link töötab kõigi Eesti pankade klientidele, olenemata sinu enda pangast.</p>
 
@@ -280,7 +280,7 @@
     </div>
   </section>
 
-  <section class="partners">
+  <section class="partners" id="partners" data-track-section="partners">
     <span class="badge badge-olive" data-i18n="partners.badge">Organisatsioon</span>
     <div class="partners-grid">
       <div class="partners-copy">
@@ -341,7 +341,7 @@
     </div>
   </section>
 
-  <section class="buyout" id="telli-hoosloome">
+  <section class="buyout" id="telli-hoosloome" data-track-section="buyout">
     <span class="badge badge-blue" data-i18n="buyout.badge">Koolidele ja ettevõtetele</span>
     <div class="buyout-copy">
       <h2 class="section-title buyout-title" data-i18n="buyout.title">Telli oma Hoosloome!</h2>
@@ -398,6 +398,15 @@
   <p class="footer-copy">© 2026 Hüppelaud</p>
 </footer>
 
+<div class="cookie-consent" id="cookieConsent" role="dialog" aria-live="polite" aria-label="Küpsiste nõusolek" hidden>
+  <p data-i18n="cookie.text">Kasutame Google Analyticsit, et mõista, kui palju külastajaid meil käib ja millised leheküljed neid huvitavad. Kas lubad seda?</p>
+  <div class="cookie-consent-actions">
+    <button type="button" class="btn btn-ghost-blue" id="cookieDecline" data-i18n="cookie.decline">Keeldun</button>
+    <button type="button" class="btn btn-primary" id="cookieAccept" data-i18n="cookie.accept">Nõustun</button>
+  </div>
+</div>
+
+<script src="analytics.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
