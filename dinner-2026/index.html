@@ -128,19 +128,35 @@
   }
   .menu-option {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
     background: #fff;
-    border-radius: 100px;
-    padding: 12px 20px;
-    font-weight: 500;
+    border-radius: var(--radius-md);
+    padding: 14px 20px;
     cursor: pointer;
     border: 1.5px solid transparent;
   }
   .menu-option:has(input:checked) { border-color: var(--blue); }
-  .menu-option input { accent-color: var(--blue); width: 16px; height: 16px; }
+  .menu-option input { accent-color: var(--blue); width: 16px; height: 16px; margin-top: 4px; flex-shrink: 0; }
+  .menu-option-text { display: flex; flex-direction: column; gap: 3px; }
+  .menu-option-name {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font-weight: 700;
+  }
+  .menu-option-price {
+    font-weight: 500;
+    color: var(--text-soft);
+    font-size: 14px;
+  }
+  .menu-option-desc {
+    font-size: 13px;
+    color: var(--text-soft);
+  }
   .menu-option .tag {
     margin-left: auto;
+    align-self: flex-start;
     font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
@@ -148,6 +164,7 @@
     background: var(--green-bg);
     padding: 4px 10px;
     border-radius: 100px;
+    white-space: nowrap;
   }
 
   .dinner-note {
@@ -251,23 +268,32 @@
         <label>Main course</label>
         <div class="menu-options" id="menuOptions">
           <label class="menu-option">
-            <input type="radio" name="menu" value="Herb-Crusted Salmon">
-            Herb-Crusted Salmon
+            <input type="radio" name="menu" value="Koreapärane krõbekana (17€)">
+            <span class="menu-option-text">
+              <span class="menu-option-name">Koreapärane krõbekana <span class="menu-option-price">17€</span></span>
+              <span class="menu-option-desc">jaapani riis · sojakurk · gochujang</span>
+            </span>
           </label>
           <label class="menu-option">
-            <input type="radio" name="menu" value="Wild Mushroom Risotto">
-            Wild Mushroom Risotto
+            <input type="radio" name="menu" value="Steik &amp; friikad (23€)">
+            <span class="menu-option-text">
+              <span class="menu-option-name">Steik &amp; friikad <span class="menu-option-price">23€</span></span>
+              <span class="menu-option-desc">piprakaste · kukeseened</span>
+            </span>
+          </label>
+          <label class="menu-option">
+            <input type="radio" name="menu" value="Põletatud kapsas (15€)">
+            <span class="menu-option-text">
+              <span class="menu-option-name">Põletatud kapsas <span class="menu-option-price">15€</span></span>
+              <span class="menu-option-desc">sarapuupähkel · kukeseen · vahustatud ricotta</span>
+            </span>
             <span class="tag">Veg</span>
           </label>
-          <label class="menu-option">
-            <input type="radio" name="menu" value="Braised Short Rib">
-            Braised Short Rib
-          </label>
         </div>
-        <p class="dinner-note">Placeholder menu — final dishes to follow.</p>
+        <p class="dinner-note">Dessert and drinks — pick on the night.</p>
       </div>
 
-      <p class="form-error" id="formError" hidden>Please add your name and pick at least one evening.</p>
+      <p class="form-error" id="formError" hidden>Please add your name, pick at least one evening, and choose a main.</p>
       <p class="form-success" id="formSuccess" hidden>Thanks — your RSVP is in! 🎉</p>
 
       <button type="button" class="btn btn-primary" id="submitBtn" style="width: 100%; justify-content: center;">Send my RSVP</button>

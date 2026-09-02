@@ -35,11 +35,12 @@
 
   submitBtn.addEventListener("click", function () {
     var name = nameInput.value.trim();
+    var menuInput = document.querySelector('input[name="menu"]:checked');
 
     successEl.hidden = true;
 
-    if (!name || selectedDays.size === 0) {
-      errorEl.textContent = "Please add your name and pick at least one evening.";
+    if (!name || selectedDays.size === 0 || !menuInput) {
+      errorEl.textContent = "Please add your name, pick at least one evening, and choose a main.";
       errorEl.hidden = false;
       return;
     }
@@ -52,8 +53,7 @@
 
     errorEl.hidden = true;
 
-    var menuInput = document.querySelector('input[name="menu"]:checked');
-    var menu = menuInput ? menuInput.value : "No preference given";
+    var menu = menuInput.value;
 
     var chosenDates = Array.from(selectedDays)
       .sort()
