@@ -3,12 +3,12 @@
   var SCRIPT_URL = "https://script.google.com/macros/s/AKfycby8TaLgMi6KIJ41ed4Ol5toUDG-zuXKIvTdWFwlS9jgubqMPNc1OhCcxS1wNlQ6gt8/exec";
 
   var DAY_LABELS = {
-    "2026-08-25": "Tue, Aug 25",
-    "2026-08-26": "Wed, Aug 26",
-    "2026-08-27": "Thu, Aug 27",
-    "2026-08-28": "Fri, Aug 28",
-    "2026-08-29": "Sat, Aug 29",
-    "2026-08-30": "Sun, Aug 30"
+    "2026-09-25": "Fri, Sep 25",
+    "2026-09-26": "Sat, Sep 26",
+    "2026-09-27": "Sun, Sep 27",
+    "2026-09-28": "Mon, Sep 28",
+    "2026-09-29": "Tue, Sep 29",
+    "2026-09-30": "Wed, Sep 30"
   };
 
   var selectedDays = new Set();
