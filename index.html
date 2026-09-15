@@ -5,8 +5,154 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title data-i18n="meta.title">Hüppelaud - Nutitalgud noortele</title>
 <meta name="description" data-i18n-content="meta.description" content="Hüppelaud on ainulaadne tehnoloogia- ja ettevõtluse suvekool, kuhu tulevad kokku noored üle Eesti, et ehitada nelja päeva jooksul ideedest esimesed töötavad prototüübid.">
+<link rel="canonical" href="https://huppelaud.eu/">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
 <link rel="stylesheet" href="styles.css">
+
+<!-- Social previews (Facebook, LinkedIn, Slack, Discord, WhatsApp, X) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Hüppelaud">
+<meta property="og:locale" content="et_EE">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:url" content="https://huppelaud.eu/">
+<meta property="og:title" content="Hüppelaud - Nutitalgud noortele">
+<meta property="og:description" content="Tehnoloogia- ja ettevõtluse suvekool 14–19-aastastele: noored üle Eesti ehitavad nelja päevaga ideedest töötavad prototüübid. Toeta või osale!">
+<meta property="og:image" content="https://huppelaud.eu/assets/images/og-huppelaud.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Hüppelaud 2026 osalejad ja mentorid Hüppelaua logo ees">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hüppelaud - Nutitalgud noortele">
+<meta name="twitter:description" content="Tehnoloogia- ja ettevõtluse suvekool 14–19-aastastele: noored üle Eesti ehitavad nelja päevaga ideedest töötavad prototüübid.">
+<meta name="twitter:image" content="https://huppelaud.eu/assets/images/og-huppelaud.jpg">
+
+<!-- Structured data: tells Google the site name, the organisation behind it,
+     its logo/photos and past events, so search can show Hüppelaud's own images. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://huppelaud.eu/#website",
+      "url": "https://huppelaud.eu/",
+      "name": "Hüppelaud",
+      "alternateName": ["Hüppelaud MTÜ", "Huppelaud"],
+      "inLanguage": "et",
+      "publisher": { "@id": "https://huppelaud.eu/#organization" }
+    },
+    {
+      "@type": "NGO",
+      "@id": "https://huppelaud.eu/#organization",
+      "name": "Hüppelaud",
+      "legalName": "Hüppelaud MTÜ",
+      "url": "https://huppelaud.eu/",
+      "description": "Tehnoloogia- ja ettevõtluse suvekool ning häkatonid 14–19-aastastele noortele Eestis.",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://huppelaud.eu/assets/images/logo.png",
+        "width": 600,
+        "height": 600
+      },
+      "image": [
+        "https://huppelaud.eu/assets/images/og-huppelaud.jpg",
+        "https://huppelaud.eu/assets/images/event-huppelaud-2026.jpg",
+        "https://huppelaud.eu/assets/images/hero-huppelaud-2026.jpg"
+      ],
+      "email": "tere@huppelaud.eu",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Narva mnt 26",
+        "addressLocality": "Tallinn",
+        "addressCountry": "EE"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "Registrikood",
+        "value": "80651415"
+      },
+      "areaServed": "EE",
+      "sameAs": [
+        "https://www.instagram.com/huppelaud/",
+        "https://www.facebook.com/huppelaud/"
+      ]
+    },
+    {
+      "@type": "Event",
+      "name": "Hüppelaud 2026",
+      "startDate": "2026-07-22",
+      "endDate": "2026-07-25",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": { "@type": "Place", "name": "Sepikoja galerii", "address": { "@type": "PostalAddress", "addressLocality": "Tallinn", "addressCountry": "EE" } },
+      "image": ["https://huppelaud.eu/assets/images/event-huppelaud-2026.jpg", "https://huppelaud.eu/assets/images/hero-huppelaud-2026.jpg"],
+      "description": "Kümnes Hüppelaud: ligi 60 noort, 14 meeskonda ja 13 mentorit ehitasid nelja päevaga ideedest töötavad prototüübid.",
+      "organizer": { "@id": "https://huppelaud.eu/#organization" }
+    },
+    {
+      "@type": "Event",
+      "name": "Lumelaud 2026",
+      "startDate": "2026-02-26",
+      "endDate": "2026-02-28",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": { "@type": "Place", "name": "ruum", "address": { "@type": "PostalAddress", "addressLocality": "Tallinn", "addressCountry": "EE" } },
+      "image": "https://huppelaud.eu/assets/images/event-lumelaud-2026.jpg",
+      "description": "25 õpilast, 20 ideed ja 7 meeskonda, kes esitlesid kolme päeva järel oma prototüüpe.",
+      "organizer": { "@id": "https://huppelaud.eu/#organization" }
+    },
+    {
+      "@type": "Event",
+      "name": "Hüppelaud 2025",
+      "startDate": "2025-08-03",
+      "endDate": "2025-08-08",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": { "@type": "Place", "name": "Kuressaare Ametikool", "address": { "@type": "PostalAddress", "addressLocality": "Kuressaare", "addressCountry": "EE" } },
+      "image": "https://huppelaud.eu/assets/images/event-huppelaud-2025.jpg",
+      "description": "13 meeskonda ehitasid 53 ideest prototüüpe 15 mentori toel.",
+      "organizer": { "@id": "https://huppelaud.eu/#organization" }
+    },
+    {
+      "@type": "Event",
+      "name": "Lumelaud 2025",
+      "startDate": "2025-02-26",
+      "endDate": "2025-02-28",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": { "@type": "Place", "name": "Vabamu", "address": { "@type": "PostalAddress", "addressLocality": "Tallinn", "addressCountry": "EE" } },
+      "image": "https://huppelaud.eu/assets/images/event-lumelaud-2025.jpg",
+      "description": "Kolmepäevane talvine hoosloome, kus viis meeskonda esitlesid oma valmis tooteid.",
+      "organizer": { "@id": "https://huppelaud.eu/#organization" }
+    },
+    {
+      "@type": "Event",
+      "name": "Hüppelaud 2024",
+      "startDate": "2024-08-05",
+      "endDate": "2024-08-09",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": { "@type": "Place", "name": "Viljandi Kutseõppekeskus", "address": { "@type": "PostalAddress", "addressLocality": "Viljandi", "addressCountry": "EE" } },
+      "image": "https://huppelaud.eu/assets/images/event-huppelaud-2024.jpg",
+      "description": "Nädal toodete ehitamist Viljandis, lõpuesitlustel üllatuskülalisena Bolti asutaja Markus Villig.",
+      "organizer": { "@id": "https://huppelaud.eu/#organization" }
+    },
+    {
+      "@type": "Event",
+      "name": "Hüppelaud 2023",
+      "startDate": "2023-07-30",
+      "endDate": "2023-08-04",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": { "@type": "Place", "name": "kood/Jõhvi", "address": { "@type": "PostalAddress", "addressLocality": "Jõhvi", "addressCountry": "EE" } },
+      "image": "https://huppelaud.eu/assets/images/event-huppelaud-2023.jpg",
+      "description": "Seitsmes Hüppelaud koostöös Enter Bootcampiga, üle 80 noore osalejaga.",
+      "organizer": { "@id": "https://huppelaud.eu/#organization" }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -457,31 +603,31 @@
       <strong>@huppelaud</strong>
     </a>
     <div class="gallery-grid" id="galleryGrid">
-      <img src="assets/images/gallery-2026/g-4625.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy" class="gallery-2x2">
-      <img src="assets/images/gallery-2026/g-4584.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
-      <img src="assets/images/gallery-2026/g-4593.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
-      <img src="assets/images/gallery-2026/g-4612.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
-      <img src="assets/images/gallery-2026/g-4621.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
-      <img src="assets/images/gallery-2026/g-4638.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
-      <img src="assets/images/gallery-2026/g-4639.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
-      <img src="assets/images/gallery-2026/g-4648.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy" class="gallery-2x2">
-      <img src="assets/images/gallery-2026/g-4652.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
-      <img src="assets/images/gallery-2026/g-4654.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
-      <img src="assets/images/gallery-2026/g-4655.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
-      <img src="assets/images/gallery-2026/g-4698.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
-      <img src="assets/images/gallery-2026/g-4707.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
-      <img src="assets/images/gallery-2026/g-4712.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
-      <img src="assets/images/gallery-2026/g-4847.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy" class="gallery-2x2">
-      <img src="assets/images/gallery-2026/g-4860.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
-      <img src="assets/images/gallery-2026/g-4870.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
-      <img src="assets/images/gallery-2026/g-4916.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy" class="gallery-2x2">
-      <img src="assets/images/gallery-2026/g-102611.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
-      <img src="assets/images/gallery-2026/g-4789.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
-      <img src="assets/images/gallery-2026/g-9408.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
-      <img src="assets/images/gallery-2026/g-9416.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
-      <img src="assets/images/gallery-2026/g-9491.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
-      <img src="assets/images/gallery-2026/g-9507.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
-      <img src="assets/images/gallery-2026/g-9516.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4625.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy" class="gallery-2x2">
+      <img src="assets/images/gallery-2026/g-4584.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4593.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4612.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4621.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4638.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4639.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4648.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy" class="gallery-2x2">
+      <img src="assets/images/gallery-2026/g-4652.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4654.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4655.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4698.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4707.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4712.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4847.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy" class="gallery-2x2">
+      <img src="assets/images/gallery-2026/g-4860.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4870.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4916.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy" class="gallery-2x2">
+      <img src="assets/images/gallery-2026/g-102611.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4789.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy">
+      <img src="assets/images/gallery-2026/g-9408.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy">
+      <img src="assets/images/gallery-2026/g-9416.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy">
+      <img src="assets/images/gallery-2026/g-9491.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy">
+      <img src="assets/images/gallery-2026/g-9507.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy">
+      <img src="assets/images/gallery-2026/g-9516.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas" loading="lazy">
     </div>
   </div>
 </div>

@@ -1,0 +1,5 @@
+# Cloudflare Pages redirects.
+# The hero used to link to ./huppelaud-2026, which never existed and silently
+# served the homepage. Send any old links or crawled copies back home.
+/huppelaud-2026   /   301
+/huppelaud-2026/  /   301

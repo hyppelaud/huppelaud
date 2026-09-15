@@ -1,0 +1,4 @@
+# Search engines are welcome to index the whole site.
+# Cloudflare prepends its managed AI-crawler rules to this file at the edge.
+
+Sitemap: https://huppelaud.eu/sitemap.xml

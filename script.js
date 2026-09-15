@@ -37,7 +37,7 @@ var TRANSLATIONS = {
 
   "events.viewPhotos": { et: "Vaata pilte", en: "View photos" },
   "events.viewPhotosTitle": { et: "Hüppelaud 2026 pildid", en: "Hüppelaud 2026 photos" },
-  "events.galleryAlt": { et: "Hüppelaud 2026 pilt", en: "Hüppelaud 2026 photo" },
+  "events.galleryAlt": { et: "Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas", en: "Hüppelaud 2026 – youth technology and entrepreneurship summer school in Tallinn" },
   "events.closeAria": { et: "Sulge", en: "Close" },
   "events.prevAria": { et: "Eelmine pilt", en: "Previous photo" },
   "events.nextAria": { et: "Järgmine pilt", en: "Next photo" },
