@@ -1,3 +1,7 @@
+// All page text in both languages. index.html (Estonian, served at /) and
+// en/index.html (English, served at /en/) are generated from these strings:
+// after changing text here or markup in index.html, run
+//   python3 tools/build_i18n.py
 var TRANSLATIONS = {
   "meta.title": {
     et: "Hüppelaud - Nutitalgud noortele",
@@ -7,8 +11,20 @@ var TRANSLATIONS = {
     et: "Hüppelaud on ainulaadne tehnoloogia- ja ettevõtluse suvekool, kuhu tulevad kokku noored üle Eesti, et ehitada nelja päeva jooksul ideedest esimesed töötavad prototüübid.",
     en: "Hüppelaud is a unique technology and entrepreneurship summer school where young people from all over Estonia come together to build their first working prototypes from ideas in four days."
   },
+  "meta.lang": { et: "et", en: "en" },
+  "meta.url": { et: "https://huppelaud.eu/", en: "https://huppelaud.eu/en/" },
+  "meta.ogLocale": { et: "et_EE", en: "en_GB" },
+  "meta.ogLocaleAlternate": { et: "en_GB", en: "et_EE" },
+  "meta.ogDescription": {
+    et: "Tehnoloogia- ja ettevõtluse suvekool 14–19-aastastele: noored üle Eesti ehitavad nelja päevaga ideedest töötavad prototüübid. Toeta või osale.",
+    en: "A technology and entrepreneurship summer school for 14–19 year-olds: young people from across Estonia turn their ideas into working prototypes in four days. Support us or take part."
+  },
+  "meta.ogImageAlt": { et: "Hüppelaud 2026 osalejad ja mentorid Hüppelaua logo ees", en: "Hüppelaud 2026 participants and mentors in front of the Hüppelaud logo" },
+
   "nav.logoAria": { et: "Hüppelaud avaleht", en: "Hüppelaud homepage" },
-  "nav.langAria": { et: "Vali keel", en: "Select language" },
+  "nav.langSwitch": { et: "In English", en: "Eesti keeles" },
+  "nav.langHref": { et: "/en/", en: "/" },
+  "nav.langCode": { et: "en", en: "et" },
   "nav.openMenu": { et: "Ava menüü", en: "Open menu" },
   "nav.events": { et: "Üritused", en: "Events" },
   "nav.team": { et: "Meeskond", en: "Team" },
@@ -22,11 +38,12 @@ var TRANSLATIONS = {
   },
   "cookie.accept": { et: "Nõustun", en: "Accept" },
   "cookie.decline": { et: "Keeldun", en: "Decline" },
+  "cookie.aria": { et: "Küpsiste nõusolek", en: "Cookie consent" },
 
   "hero.title": { et: "Hoosloomed noortele", en: "Build sprints for young talent" },
   "hero.text": {
-    et: "Tule avasta tehnoloogia- ja ettevõtlusmaailma ning õpi kuidas ehitada päevadega töötav prototüüp!",
-    en: "Come discover the world of technology and entrepreneurship, and learn how to build a working prototype in just a few days!"
+    et: "Tule avasta tehnoloogia- ja ettevõtlusmaailma ning õpi, kuidas ehitada mõne päevaga töötav toode.",
+    en: "Come discover the world of technology and entrepreneurship, and learn how to build a working product in just a few days."
   },
   "hero.discord": { et: "Liitu Hüppelaua Discordiga", en: "Join the Hüppelaud Discord" },
 
@@ -37,7 +54,7 @@ var TRANSLATIONS = {
 
   "events.viewPhotos": { et: "Vaata pilte", en: "View photos" },
   "events.viewPhotosTitle": { et: "Hüppelaud 2026 pildid", en: "Hüppelaud 2026 photos" },
-  "events.galleryAlt": { et: "Hüppelaud 2026 pilt", en: "Hüppelaud 2026 photo" },
+  "events.galleryAlt": { et: "Hüppelaud 2026 – noorte tehnoloogia- ja ettevõtluse suvekool Tallinnas", en: "Hüppelaud 2026 – youth technology and entrepreneurship summer school in Tallinn" },
   "events.closeAria": { et: "Sulge", en: "Close" },
   "events.prevAria": { et: "Eelmine pilt", en: "Previous photo" },
   "events.nextAria": { et: "Järgmine pilt", en: "Next photo" },
@@ -110,7 +127,7 @@ var TRANSLATIONS = {
   "events.huppelaud2017.meta": { et: "Spark Makerlab, Tartu", en: "Spark Makerlab, Tartu" },
   "events.huppelaud2023.meta": { et: "30. juuli – 4. august  ✳  kood/Jõhvi", en: "30 July – 4 August  ✳  kood/Jõhvi" },
 
-  "team.title": { et: "Suhtleme!", en: "Let's connect!" },
+  "team.title": { et: "Suhtleme", en: "Let's connect" },
   "team.intro": {
     et: "Hüppelaud on paljude inimeste ühine töö — siin tutvustan end mina, Hüppelaua peakorraldaja, kelle elu see suvekool kunagi muutis ja kes nüüd annab sama kogemuse edasi järgmisele põlvkonnale.",
     en: "Hüppelaud is the work of many hands — here I introduce myself, Hüppelaud's head organizer, whose own life was changed by this summer school and who now passes that same experience on to the next generation."
@@ -129,7 +146,7 @@ var TRANSLATIONS = {
   },
 
   "support.badge": { et: "Lapsevanem", en: "Parent" },
-  "support.title": { et: "Toeta meid!", en: "Support us!" },
+  "support.title": { et: "Toeta meid", en: "Support us" },
   "support.p1": {
     et: "Hüppelaud on koht, kus noored saavad esitleda oma ideid, arendada meeskonnas prototüüpe ja õppida parimatelt mentoritelt Eesti tehnoloogiamaastikul. See kogemus võib olla just see, mis paneb alguse uuele karjäärile või järgmisele läbimurdelisele iduettevõttele.",
     en: "Hüppelaud is a place where young people can pitch their ideas, develop prototypes in teams, and learn from some of the best mentors on Estonia's tech scene. This experience could be exactly what sparks a new career, or the next breakthrough startup."
@@ -139,8 +156,8 @@ var TRANSLATIONS = {
     en: "Your support helps cover the venue, workshops, mentors, and materials for our events, so that no interested young person has to pass up the chance to take part because of financial barriers. Every contribution, whether it's 10 or 1,000 euros, helps us give young people the courage and skills they need to bring their ideas to life."
   },
   "support.donateHeading": {
-    et: "Kasvatame koos Eestile järgmise põlvkonna leiutajaid ja tegijaid!",
-    en: "Together, let's grow Estonia's next generation of inventors and doers!"
+    et: "Kasvatame koos Eestile järgmise põlvkonna leiutajaid ja tegijaid",
+    en: "Together, let's grow Estonia's next generation of inventors and doers"
   },
   "support.donateLead": {
     et: "Vali sobiv summa ja toeta otse — link töötab kõigi Eesti pankade klientidele, olenemata sinu enda pangast.",
@@ -170,8 +187,8 @@ var TRANSLATIONS = {
 
   "support.recurringTitle": { et: "Sea üles püsimakse", en: "Set up a recurring donation" },
   "support.recurringText": {
-    et: "Loo oma internetipangas korduv makse meie annetuse andmetega — püsitoetusega ootavad sind mitmed boonused!",
-    en: "Set up a recurring transfer in your own online bank using our donation details — recurring donors get access to several exclusive perks!"
+    et: "Loo oma internetipangas korduv makse meie annetuse andmetega — püsitoetusega ootavad sind mitmed boonused.",
+    en: "Set up a recurring transfer in your own online bank using our donation details — recurring donors get access to several exclusive perks."
   },
   "support.recurring5": { et: "5 €/kuus", en: "€5/month" },
   "support.recurring10": { et: "10 €/kuus", en: "€10/month" },
@@ -182,7 +199,7 @@ var TRANSLATIONS = {
   "support.recurringCta": { et: "Vaata pangaandmeid", en: "View bank details" },
 
   "partners.badge": { et: "Organisatsioon", en: "Organization" },
-  "partners.title": { et: "Teeme koostööd!", en: "Let's work together!" },
+  "partners.title": { et: "Teeme koostööd", en: "Let's work together" },
   "partners.p1": {
     et: "Hüppelauaga on 9 aasta jooksul koostööd teinud mitmed ettenägelikud ja väärtustepõhised organisatsioonid.",
     en: "Over the past 9 years, Hüppelaud has partnered with a range of forward-thinking, values-driven organizations."
@@ -219,7 +236,7 @@ var TRANSLATIONS = {
   },
 
   "buyout.badge": { et: "Koolidele ja ettevõtetele", en: "For schools and companies" },
-  "buyout.title": { et: "Telli oma hoosloome!", en: "Book your own Hoosloome!" },
+  "buyout.title": { et: "Telli oma hoosloome", en: "Book your own Hoosloome" },
   "buyout.p1": {
     et: "Soovid pakkuda oma õpilastele või meeskonnale sama kogemust, mida oleme loonud sadadele noortele üle Eesti? Toome meie tõestatud formaadi, mentorid ja korralduse otse teie juurde.",
     en: "Want to give your students or team the same experience we've built for hundreds of young people across Estonia? We bring our proven format, mentors, and organization directly to you."
@@ -232,46 +249,13 @@ var TRANSLATIONS = {
   "buyout.feature2": { et: "Meie kogenud mentorid ja korraldusmeeskond", en: "Our experienced mentors and organizing team" },
   "buyout.feature3": { et: "Teemad ja väljakutsed kohandatud vastavalt teie soovile", en: "Topics and challenges tailored to what you need" },
   "buyout.cta": { et: "Küsi hinda", en: "Request a quote" },
+  "buyout.mailto": { et: "mailto:tere@huppelaud.eu?subject=Telli%20oma%20hoosloome", en: "mailto:tere@huppelaud.eu?subject=Book%20a%20Hoosloome" },
 
   "footer.address": { et: "Narva mnt 26, Tallinn, Eesti", en: "Narva mnt 26, Tallinn, Estonia" },
   "footer.regNr": { et: "Reg nr. 80651415", en: "Reg. no. 80651415" },
   "footer.instagramAria": { et: "Instagram", en: "Instagram" },
   "footer.facebookAria": { et: "Facebook", en: "Facebook" }
 };
-
-var LANG_STORAGE_KEY = "huppelaud-lang";
-
-function applyLanguage(lang) {
-  document.documentElement.lang = lang;
-
-  document.querySelectorAll("[data-i18n]").forEach(function (el) {
-    var entry = TRANSLATIONS[el.getAttribute("data-i18n")];
-    if (entry && entry[lang] != null) el.textContent = entry[lang];
-  });
-
-  document.querySelectorAll("[data-i18n-aria]").forEach(function (el) {
-    var entry = TRANSLATIONS[el.getAttribute("data-i18n-aria")];
-    if (entry && entry[lang] != null) el.setAttribute("aria-label", entry[lang]);
-  });
-
-  document.querySelectorAll("[data-i18n-alt]").forEach(function (el) {
-    var entry = TRANSLATIONS[el.getAttribute("data-i18n-alt")];
-    if (entry && entry[lang] != null) el.setAttribute("alt", entry[lang]);
-  });
-
-  var titleEntry = TRANSLATIONS["meta.title"];
-  if (titleEntry) document.title = titleEntry[lang];
-
-  var descEntry = TRANSLATIONS["meta.description"];
-  var descTag = document.querySelector('meta[name="description"]');
-  if (descEntry && descTag) descTag.setAttribute("content", descEntry[lang]);
-
-  document.querySelectorAll(".lang-code").forEach(function (el) {
-    el.textContent = lang === "en" ? "EN" : "EE";
-  });
-
-  try { localStorage.setItem(LANG_STORAGE_KEY, lang); } catch (e) {}
-}
 
 document.addEventListener("DOMContentLoaded", function () {
   var hamburger = document.querySelector(".hamburger");
@@ -426,16 +410,5 @@ document.addEventListener("DOMContentLoaded", function () {
     } else if (galleryModal && galleryModal.classList.contains("open") && e.key === "Escape") {
       closeGalleryModal();
     }
-  });
-
-  var savedLang = null;
-  try { savedLang = localStorage.getItem(LANG_STORAGE_KEY); } catch (e) {}
-  applyLanguage(savedLang === "en" ? "en" : "et");
-
-  document.querySelectorAll(".lang-toggle").forEach(function (button) {
-    button.addEventListener("click", function () {
-      var nextLang = document.documentElement.lang === "en" ? "et" : "en";
-      applyLanguage(nextLang);
-    });
   });
 });

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://huppelaud.eu/</loc>
+    <lastmod>2026-09-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="et" href="https://huppelaud.eu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://huppelaud.eu/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://huppelaud.eu/en/"/>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/og-huppelaud.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/event-huppelaud-2026.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/hero-huppelaud-2026.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/hero-huppelaud-2026-2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/event-lumelaud-2026.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/event-huppelaud-2025.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/event-lumelaud-2025.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/event-huppelaud-2024.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/event-huppelaud-2023.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-4612.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-4648.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-4593.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-4698.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-4860.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-4625.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-4584.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-4621.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-4638.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-4639.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-4652.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-4654.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-4655.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-4707.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-4712.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-4847.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-4870.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-4916.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-102611.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-4789.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-9408.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-9416.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-9491.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-9507.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/gallery-2026/g-9516.jpg</image:loc></image:image>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/logo.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://huppelaud.eu/en/</loc>
+    <lastmod>2026-09-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="et" href="https://huppelaud.eu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://huppelaud.eu/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://huppelaud.eu/en/"/>
+    <image:image><image:loc>https://huppelaud.eu/assets/images/og-huppelaud.jpg</image:loc></image:image>
+  </url>
+</urlset>
