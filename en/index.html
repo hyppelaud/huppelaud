@@ -12,7 +12,7 @@
 <link rel="alternate" hreflang="x-default" href="https://huppelaud.eu/en/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="icon" type="image/svg+xml" href="/assets/images/logo.svg">
-<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/styles.css?v=20260915">
 
 <!-- Social previews (Facebook, LinkedIn, Slack, Discord, WhatsApp, X) -->
 <meta property="og:type" content="website">
@@ -516,7 +516,9 @@
   <button type="button" class="lightbox-nav lightbox-next" id="lightboxNext" data-i18n-aria="events.nextAria" aria-label="Next photo">&#8594;</button>
 </div>
 
-<script src="/analytics.js"></script>
-<script src="/script.js"></script>
+<!-- Cloudflare lets browsers cache CSS/JS for 4 hours: bump ?v= whenever
+     styles.css, analytics.js or script.js change, then run tools/build_i18n.py. -->
+<script src="/analytics.js?v=20260915"></script>
+<script src="/script.js?v=20260915"></script>
 </body>
 </html>
