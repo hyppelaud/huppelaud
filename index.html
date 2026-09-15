@@ -11,6 +11,16 @@
 <body>
 
 <header class="hero" id="top" data-track-section="hero">
+  <div class="hero-carousel" id="heroCarousel" aria-hidden="true">
+    <img src="assets/images/hero-huppelaud-2026.jpg" alt="" class="active">
+    <img src="assets/images/hero-huppelaud-2026-2.jpg" alt="">
+    <img src="assets/images/gallery-2026/g-4612.jpg" alt="">
+    <img src="assets/images/gallery-2026/g-4648.jpg" alt="">
+    <img src="assets/images/gallery-2026/g-4593.jpg" alt="">
+    <img src="assets/images/gallery-2026/g-4698.jpg" alt="">
+    <img src="assets/images/gallery-2026/g-4860.jpg" alt="">
+  </div>
+  <div class="hero-scrim" aria-hidden="true"></div>
   <nav class="navbar">
     <a href="#top" class="logo" data-i18n-aria="nav.logoAria" aria-label="Hüppelaud avaleht">
       <img src="assets/images/logo.svg" alt="Hüppelaud">
@@ -46,15 +56,31 @@
 
   <div class="hero-content">
     <h1 data-i18n="hero.title">Hoosloomed noortele</h1>
-    <p class="hero-text" data-i18n="hero.text">Tule avasta tehnoloogia- ja ettevõtlusmaailma ning õpi kuidas ehitada päevadega töötav prototüüp!</p>
+    <p class="hero-text" data-i18n="hero.text">Tule avasta tehnoloogia- ja ettevõtlusmaailma ning õpi, kuidas ehitada mõne päevaga töötav toode!</p>
     <div class="hero-buttons">
-      <a href="./huppelaud-2026" class="btn btn-primary">Hüppelaud 2026</a>
-      <a href="https://discord.com/invite/HeuGMkVegz" class="btn btn-primary" data-i18n="hero.discord">Liitu Hüppelaua Discordiga</a>
+      <a href="#events" class="btn btn-primary">Hüppelaud 2026</a>
     </div>
   </div>
 </header>
 
 <main>
+
+  <section class="intro">
+    <div class="intro-grid">
+      <div class="intro-item">
+        <span class="intro-num">01</span>
+        <h3><span class="intro-highlight" data-i18n="intro.item1.highlight">Neli päeva</span> <span data-i18n="intro.item1.rest">oma toote ehitamiseks</span></h3>
+      </div>
+      <div class="intro-item">
+        <span class="intro-num">02</span>
+        <h3 data-i18n="intro.item2">Anname vajalikud tööriistad ja ekspertteadmised</h3>
+      </div>
+      <div class="intro-item">
+        <span class="intro-num">03</span>
+        <h3 data-i18n="intro.item3">Avasta enda jaoks tehnoloogia- ja ettevõtlusmaailm</h3>
+      </div>
+    </div>
+  </section>
 
   <section class="events" id="events" data-track-section="events">
     <h2 class="section-title center" data-i18n="nav.events">Üritused</h2>
@@ -66,9 +92,10 @@
           <img src="assets/images/event-huppelaud-2026.jpg" data-i18n-alt="events.huppelaud2026.alt" alt="Hüppelaud 2026 osalejad">
         </div>
         <div class="event-info">
-          <h3>Hüppelaud 2026 <span class="anniversary-tag" data-i18n="events.huppelaud2026.anniversary">Juba 10. korda</span></h3>
+          <h3>Hüppelaud 2026 <span class="edition-tag">Edition 10</span></h3>
           <p class="event-meta" data-i18n="events.huppelaud2026.meta">22.–25. juuli &nbsp;✳&nbsp; Sepikoja galerii, Tallinn</p>
           <p class="event-desc" data-i18n="events.huppelaud2026.desc">Juba kümnendat korda toimunud Hüppelaud kogus 22.–25. juulini Tallinna Sepikoja galeriisse ligi 60 14–19-aastast noort, kes moodustasid nelja päevaga 14 meeskonda ja ehitasid ideedest esimesed töötavad prototüübid. Nädala jooksul jagasid kogemusi 13 mentorit tööstusest ja teadusest, külalisesinejana astus üles geneetik Lili Milani ning külastati ka Wise'i kontorit.</p>
+          <button type="button" class="btn btn-ghost-blue btn-sm" id="openGallery2026" data-i18n="events.viewPhotos">Vaata pilte</button>
         </div>
       </article>
 
@@ -88,7 +115,7 @@
           <img src="assets/images/event-huppelaud-2025.jpg" data-i18n-alt="events.huppelaud2025.alt" alt="Hüppelaud 2025 osalejad">
         </div>
         <div class="event-info">
-          <h3>Hüppelaud 2025</h3>
+          <h3>Hüppelaud 2025 <span class="edition-tag">Edition 9</span></h3>
           <p class="event-meta" data-i18n="events.huppelaud2025.meta">3.–8. august &nbsp;✳&nbsp; Kuressaare Ametikool</p>
           <p class="event-desc" data-i18n="events.huppelaud2025.desc">Kuressaares kogunes 13 meeskonda, kes ehitasid 53 ideest välja põnevaid prototüüpe — alates tulega tuld kustutavast seadmest (Fyreball) kuni merekaablite vigastusi tuvastava lahenduseni (CUV). Nädala jooksul jagasid kogemusi 15 mentorit ja külalisesinejad Boltist, Modashist ja Lightyearist, ning osalejad hindasid suvekooli rekordiliste 9,3 punktiga kümnest.</p>
         </div>
@@ -111,7 +138,7 @@
             <img src="assets/images/event-huppelaud-2024.jpg" data-i18n-alt="events.huppelaud2024.alt" alt="Hüppelaud 2024 osalejad">
           </div>
           <div class="event-info">
-            <h3>Hüppelaud 2024</h3>
+            <h3>Hüppelaud 2024 <span class="edition-tag">Edition 8</span></h3>
             <p class="event-meta" data-i18n="events.huppelaud2024.meta">5.–9. august &nbsp;✳&nbsp; Viljandi Kutseõppekeskus</p>
             <p class="event-desc" data-i18n="events.huppelaud2024.desc">Viljandi Kutseõppekeskuses veetsid osalejad nädala ehitades — arvuti, õmblusmasina ja treipingi taga — ning käisid õppimas Clevoni autonoomsete pakiautode tehases ja matkamas Ennuksemäel. Lõpuesitlustel said kõik kooskonnad oma tooted valmis, kui üllatuskülalisena jagas Bolti asutaja Markus Villig lugu, kuidas ta ettevõtte veel kooliõpilasena 5000-eurose laenuga käima lükkas.</p>
           </div>
@@ -122,7 +149,7 @@
             <img src="assets/images/event-huppelaud-2023.jpg" data-i18n-alt="events.huppelaud2023.alt" alt="Hüppelaud 2023 osalejad">
           </div>
           <div class="event-info">
-            <h3>Hüppelaud 2023</h3>
+            <h3>Hüppelaud 2023 <span class="edition-tag">Edition 7</span></h3>
             <p class="event-meta" data-i18n="events.huppelaud2023.meta">30. juuli – 4. august &nbsp;✳&nbsp; kood/Jõhvi</p>
             <p class="event-desc" data-i18n="events.huppelaud2023.desc">kood/Jõhvis toimunud seitsmes Hüppelaud toodi ellu koostöös Enter Bootcampiga ning kokku osales üle 80 noore. Nädalasse mahtus nii tõsine tootearendus kui ka väljasõidud — külastati Jõhvi jalaväepataljoni ja rühiti Ahermäele —, samuti ettekanded start-up'i rahastamisest investor Kärt Siilatsiga ja sellest, kuidas teadusprojektist miljardiäri teha (Carmen Kivisild).</p>
           </div>
@@ -131,7 +158,7 @@
         <div class="event-list-archive">
           <article class="event-card event-card--compact" style="--card-bg:#D8DCE2; --card-title:#5A6672;">
             <div class="event-info">
-              <h3>Hüppelaud 2022</h3>
+              <h3>Hüppelaud 2022 <span class="edition-tag">Edition 6</span></h3>
               <p class="event-meta" data-i18n="events.huppelaud2022.meta">PROTO Avastustehas, Tallinn</p>
               <p class="event-desc" data-i18n="events.huppelaud2022.desc">PROTO Avastustehases toimunud kuues Hüppelaud tõi kokku 28 ideed, millest moodustati 9 tiimi. Nädala sisse mahtusid ekskursioon Comodule tehasesse tutvumaks Tuul Ride'i e-tõukerataste tootmisega, Vivistopi loovtöötuba toodete viimistlemiseks ning isiklikud inspiratsioonilood Liis Naruskilt ja Björn Koopilt.</p>
             </div>
@@ -139,7 +166,7 @@
 
           <article class="event-card event-card--compact" style="--card-bg:#F0F0F0; --card-title:#6B6B6B;">
             <div class="event-info">
-              <h3>Hüppelaud 2021</h3>
+              <h3>Hüppelaud 2021 <span class="edition-tag">Edition 5</span></h3>
               <p class="event-meta" data-i18n="events.huppelaud2021.meta">Virtuaalne</p>
               <p class="event-desc" data-i18n="events.huppelaud2021.desc">Veebis toimunud Hüppelaud 2021 nägi nelja päevaga sündimas vaimukaid maailma paremaks muutvaid tooteid. Teisel päeval jagati teadmisi no-code tööriistadest, krüptomaailma turvalisusest ja kasutajauuringute antropoloogilistest meetoditest, mõned tiimid tegid koguni pivoti. Mentorid pidasid kõnesid lausa lennujaamast, mägedest ja paadiretkelt.</p>
             </div>
@@ -147,7 +174,7 @@
 
           <article class="event-card event-card--compact" style="--card-bg:rgba(214,184,74,0.18); --card-title:#A8842A;">
             <div class="event-info">
-              <h3>Hüppelaud 2020</h3>
+              <h3>Hüppelaud 2020 <span class="edition-tag">Edition 4</span></h3>
               <p class="event-meta" data-i18n="events.huppelaud2020.meta">Virtuaalne</p>
               <p class="event-desc" data-i18n="events.huppelaud2020.desc">2020. aastal toimus juba neljas Hüppelaud, seekord esimest korda täielikult virtuaalselt — kõik said kokku distantsilt, ent seda sama suure innu ja ideega kui alati.</p>
             </div>
@@ -155,7 +182,7 @@
 
           <article class="event-card event-card--compact" style="--card-bg:rgba(60,60,60,0.08); --card-title:#3A3A3A;">
             <div class="event-info">
-              <h3>Hüppelaud 2019</h3>
+              <h3>Hüppelaud 2019 <span class="edition-tag">Edition 3</span></h3>
               <p class="event-meta" data-i18n="events.huppelaud2019.meta">Tehnopol, Tallinn</p>
               <p class="event-desc" data-i18n="events.huppelaud2019.desc">Tehnopolis toimunud Hüppelaud 2019 pakkus töötubasid esitlusoskustest, andmeanalüüsist, tehisintellektist ja blockchainist ekspertidega nagu Sten Tamkivi, Liis Lepik ja Rene Trisberg. Kolmandaks õhtuks olid valmis juba sellised tooted nagu geomeetriaõpe Math 3D ja õpilasfirmade platvorm Huub, ning SpacierX tiim uuris koguni, kuidas oma raketti orbiidile lennutada — päeva lõpetas ootamatu sportlik vaheldus: kriketimäng Tallinna hipodroomil.</p>
             </div>
@@ -163,14 +190,14 @@
 
           <article class="event-card event-card--compact" style="--card-bg:rgba(79,197,138,0.15); --card-title:#4FC58A;">
             <div class="event-info">
-              <h3>Hüppelaud 2018</h3>
+              <h3>Hüppelaud 2018 <span class="edition-tag">Edition 2</span></h3>
               <p class="event-meta" data-i18n="events.huppelaud2018.meta">Lift99, Tallinn</p>
             </div>
           </article>
 
           <article class="event-card event-card--compact" style="--card-bg:rgba(108,33,209,0.10); --card-title:#6C21D1;">
             <div class="event-info">
-              <h3>Hüppelaud 2017</h3>
+              <h3>Hüppelaud 2017 <span class="edition-tag">Edition 1</span></h3>
               <p class="event-meta" data-i18n="events.huppelaud2017.meta">Spark Makerlab, Tartu</p>
             </div>
           </article>
@@ -325,17 +352,18 @@
         <p class="partners-label" data-i18n="partners.label2026">Partnerid 2026</p>
         <div class="logo-row">
           <img src="assets/images/partner-skaala.png" alt="Skaala">
-          <img src="assets/images/partner-wise.png" alt="Wise">
           <img src="assets/images/partner-bilt.webp" alt="Bilt">
+          <img src="assets/images/partner-lhv.svg" alt="LHV">
         </div>
         <p class="partners-label" data-i18n="partners.labelPast">Senised partnerid ja toetajad</p>
         <div class="logo-row logo-row--wrap">
           <img src="assets/images/partner-starship.png" alt="Starship">
           <img src="assets/images/partner-nucleate.png" alt="Nucleate">
-          <img src="assets/images/partner-etag.png" alt="ETAG">
+          <img src="assets/images/partner-etag.png" alt="ETAG" class="logo-lg">
           <span class="text-logo">startup estonia</span>
           <img src="assets/images/partner-modash.png" alt="Modash">
-          <img src="assets/images/partner-noorte-vabamu.png" alt="Noorte Vabamu">
+          <img src="assets/images/partner-noorte-vabamu.png" alt="Noorte Vabamu" class="logo-md">
+          <img src="assets/images/partner-wise.png" alt="Wise">
         </div>
       </div>
     </div>
@@ -344,7 +372,7 @@
   <section class="buyout" id="telli-hoosloome" data-track-section="buyout">
     <span class="badge badge-blue" data-i18n="buyout.badge">Koolidele ja ettevõtetele</span>
     <div class="buyout-copy">
-      <h2 class="section-title buyout-title" data-i18n="buyout.title">Telli oma Hoosloome!</h2>
+      <h2 class="section-title buyout-title" data-i18n="buyout.title">Telli oma hoosloome!</h2>
       <p data-i18n="buyout.p1">Soovid pakkuda oma õpilastele või meeskonnale sama kogemust, mida oleme loonud sadadele noortele üle Eesti? Toome meie tõestatud formaadi, mentorid ja korralduse otse teie juurde.</p>
       <p data-i18n="buyout.p2">Sobib koolidele ja ülikoolidele õppepäevaks, ning ettevõtetele meeskonnapäevaks või innovatsiooniüritusteks.</p>
       <ul class="buyout-features">
@@ -394,6 +422,17 @@
       <p data-i18n="footer.regNr">Reg nr. 80651415</p>
       <p><a href="mailto:tere@huppelaud.eu">tere@huppelaud.eu</a></p>
     </div>
+    <div class="footer-links">
+      <a href="https://discord.com/invite/HeuGMkVegz" class="footer-discord-btn" data-i18n="hero.discord">Liitu Hüppelaua Discordiga</a>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/huppelaud/" class="footer-social-link" target="_blank" rel="noopener noreferrer" data-i18n-aria="footer.instagramAria" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="0.9" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.facebook.com/huppelaud/" class="footer-social-link" target="_blank" rel="noopener noreferrer" data-i18n-aria="footer.facebookAria" aria-label="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M15 8h-2a2 2 0 0 0-2 2v2H9v3h2v7h3v-7h2.3l.5-3H14v-1.3c0-.6.3-1.2 1.2-1.2H16V8h-1z"/></svg>
+        </a>
+      </div>
+    </div>
   </div>
   <p class="footer-copy">© 2026 Hüppelaud</p>
 </footer>
@@ -404,6 +443,54 @@
     <button type="button" class="btn btn-ghost-blue" id="cookieDecline" data-i18n="cookie.decline">Keeldun</button>
     <button type="button" class="btn btn-primary" id="cookieAccept" data-i18n="cookie.accept">Nõustun</button>
   </div>
+</div>
+
+<div class="gallery-modal" id="galleryModal" aria-hidden="true">
+  <div class="gallery-modal-inner">
+    <div class="gallery-modal-head">
+      <h3 data-i18n="events.viewPhotosTitle">Hüppelaud 2026 pildid</h3>
+      <button type="button" class="gallery-close" id="galleryClose" data-i18n-aria="events.closeAria" aria-label="Sulge">&times;</button>
+    </div>
+    <a href="https://www.instagram.com/huppelaud/" target="_blank" rel="noopener noreferrer" class="gallery-instagram-plug">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="0.9" fill="currentColor" stroke="none"/></svg>
+      <span data-i18n="events.instagramPlug">Rohkem pilte? Jälgi meid Instagramis</span>
+      <strong>@huppelaud</strong>
+    </a>
+    <div class="gallery-grid" id="galleryGrid">
+      <img src="assets/images/gallery-2026/g-4625.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy" class="gallery-2x2">
+      <img src="assets/images/gallery-2026/g-4584.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4593.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4612.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4621.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4638.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4639.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4648.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy" class="gallery-2x2">
+      <img src="assets/images/gallery-2026/g-4652.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4654.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4655.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4698.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4707.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4712.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4847.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy" class="gallery-2x2">
+      <img src="assets/images/gallery-2026/g-4860.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4870.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4916.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy" class="gallery-2x2">
+      <img src="assets/images/gallery-2026/g-102611.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
+      <img src="assets/images/gallery-2026/g-4789.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
+      <img src="assets/images/gallery-2026/g-9408.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
+      <img src="assets/images/gallery-2026/g-9416.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
+      <img src="assets/images/gallery-2026/g-9491.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
+      <img src="assets/images/gallery-2026/g-9507.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
+      <img src="assets/images/gallery-2026/g-9516.jpg" data-i18n-alt="events.galleryAlt" alt="Hüppelaud 2026 pilt" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button type="button" class="lightbox-close" id="lightboxClose" data-i18n-aria="events.closeAria" aria-label="Sulge">&times;</button>
+  <button type="button" class="lightbox-nav lightbox-prev" id="lightboxPrev" data-i18n-aria="events.prevAria" aria-label="Eelmine">&#8592;</button>
+  <img src="" alt="" class="lightbox-img" id="lightboxImg">
+  <button type="button" class="lightbox-nav lightbox-next" id="lightboxNext" data-i18n-aria="events.nextAria" aria-label="Järgmine">&#8594;</button>
 </div>
 
 <script src="analytics.js"></script>

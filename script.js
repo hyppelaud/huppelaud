@@ -30,11 +30,23 @@ var TRANSLATIONS = {
   },
   "hero.discord": { et: "Liitu Hüppelaua Discordiga", en: "Join the Hüppelaud Discord" },
 
+  "intro.item1.highlight": { et: "Neli päeva", en: "Four days" },
+  "intro.item1.rest": { et: "oma toote ehitamiseks", en: "to build your own product" },
+  "intro.item2": { et: "Anname vajalikud tööriistad ja ekspertteadmised", en: "Supported by the tools and expertise you need" },
+  "intro.item3": { et: "Avasta enda jaoks tehnoloogia- ja ettevõtlusmaailm", en: "Enabling you to start your technology and entrepreneurship journey" },
+
+  "events.viewPhotos": { et: "Vaata pilte", en: "View photos" },
+  "events.viewPhotosTitle": { et: "Hüppelaud 2026 pildid", en: "Hüppelaud 2026 photos" },
+  "events.galleryAlt": { et: "Hüppelaud 2026 pilt", en: "Hüppelaud 2026 photo" },
+  "events.closeAria": { et: "Sulge", en: "Close" },
+  "events.prevAria": { et: "Eelmine pilt", en: "Previous photo" },
+  "events.nextAria": { et: "Järgmine pilt", en: "Next photo" },
+  "events.instagramPlug": { et: "Rohkem pilte? Jälgi meid Instagramis", en: "Want more photos? Follow us on Instagram" },
+
   "events.showMore": { et: "Näita rohkem üritusi", en: "Show more events" },
   "events.showLess": { et: "Näita vähem", en: "Show less" },
 
   "events.huppelaud2026.alt": { et: "Hüppelaud 2026 osalejad", en: "Hüppelaud 2026 participants" },
-  "events.huppelaud2026.anniversary": { et: "Juba 10. korda", en: "10 years running" },
   "events.huppelaud2026.meta": { et: "22.–25. juuli  ✳  Sepikoja galerii, Tallinn", en: "22–25 July  ✳  Sepikoja galerii, Tallinn" },
   "events.huppelaud2026.desc": {
     et: "Juba kümnendat korda toimunud Hüppelaud kogus 22.–25. juulini Tallinna Sepikoja galeriisse ligi 60 14–19-aastast noort, kes moodustasid nelja päevaga 14 meeskonda ja ehitasid ideedest esimesed töötavad prototüübid. Nädala jooksul jagasid kogemusi 13 mentorit tööstusest ja teadusest, külalisesinejana astus üles geneetik Lili Milani ning külastati ka Wise'i kontorit.",
@@ -207,7 +219,7 @@ var TRANSLATIONS = {
   },
 
   "buyout.badge": { et: "Koolidele ja ettevõtetele", en: "For schools and companies" },
-  "buyout.title": { et: "Telli oma Hoosloome!", en: "Book your own Hoosloome!" },
+  "buyout.title": { et: "Telli oma hoosloome!", en: "Book your own Hoosloome!" },
   "buyout.p1": {
     et: "Soovid pakkuda oma õpilastele või meeskonnale sama kogemust, mida oleme loonud sadadele noortele üle Eesti? Toome meie tõestatud formaadi, mentorid ja korralduse otse teie juurde.",
     en: "Want to give your students or team the same experience we've built for hundreds of young people across Estonia? We bring our proven format, mentors, and organization directly to you."
@@ -222,7 +234,9 @@ var TRANSLATIONS = {
   "buyout.cta": { et: "Küsi hinda", en: "Request a quote" },
 
   "footer.address": { et: "Narva mnt 26, Tallinn, Eesti", en: "Narva mnt 26, Tallinn, Estonia" },
-  "footer.regNr": { et: "Reg nr. 80651415", en: "Reg. no. 80651415" }
+  "footer.regNr": { et: "Reg nr. 80651415", en: "Reg. no. 80651415" },
+  "footer.instagramAria": { et: "Instagram", en: "Instagram" },
+  "footer.facebookAria": { et: "Facebook", en: "Facebook" }
 };
 
 var LANG_STORAGE_KEY = "huppelaud-lang";
@@ -329,6 +343,90 @@ document.addEventListener("DOMContentLoaded", function () {
       donateAlt.scrollIntoView({ behavior: "smooth", block: "center" });
     });
   }
+
+  var heroCarousel = document.getElementById("heroCarousel");
+  if (heroCarousel) {
+    var heroSlides = Array.prototype.slice.call(heroCarousel.querySelectorAll("img"));
+    var heroSlideIndex = 0;
+    if (heroSlides.length > 1) {
+      setInterval(function () {
+        heroSlides[heroSlideIndex].classList.remove("active");
+        heroSlideIndex = (heroSlideIndex + 1) % heroSlides.length;
+        heroSlides[heroSlideIndex].classList.add("active");
+      }, 5000);
+    }
+  }
+
+  var galleryModal = document.getElementById("galleryModal");
+  var galleryGrid = document.getElementById("galleryGrid");
+  var openGalleryBtn = document.getElementById("openGallery2026");
+  var galleryClose = document.getElementById("galleryClose");
+  var lightbox = document.getElementById("lightbox");
+  var lightboxImg = document.getElementById("lightboxImg");
+  var lightboxClose = document.getElementById("lightboxClose");
+  var lightboxPrev = document.getElementById("lightboxPrev");
+  var lightboxNext = document.getElementById("lightboxNext");
+  var galleryImages = galleryGrid ? Array.prototype.slice.call(galleryGrid.querySelectorAll("img")) : [];
+  var lightboxIndex = 0;
+
+  function openGalleryModal() {
+    if (!galleryModal) return;
+    galleryModal.classList.add("open");
+    galleryModal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+  function closeGalleryModal() {
+    if (!galleryModal) return;
+    galleryModal.classList.remove("open");
+    galleryModal.setAttribute("aria-hidden", "true");
+    if (!lightbox || !lightbox.classList.contains("open")) document.body.style.overflow = "";
+  }
+  function openLightbox(index) {
+    if (!lightbox || !lightboxImg || !galleryImages.length) return;
+    lightboxIndex = (index + galleryImages.length) % galleryImages.length;
+    lightboxImg.src = galleryImages[lightboxIndex].src;
+    lightboxImg.alt = galleryImages[lightboxIndex].alt;
+    lightbox.classList.add("open");
+    lightbox.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+  function closeLightbox() {
+    if (!lightbox) return;
+    lightbox.classList.remove("open");
+    lightbox.setAttribute("aria-hidden", "true");
+    if (!galleryModal || !galleryModal.classList.contains("open")) document.body.style.overflow = "";
+  }
+
+  if (openGalleryBtn) openGalleryBtn.addEventListener("click", openGalleryModal);
+  if (galleryClose) galleryClose.addEventListener("click", closeGalleryModal);
+  if (galleryModal) {
+    galleryModal.addEventListener("click", function (e) {
+      if (e.target === galleryModal) closeGalleryModal();
+    });
+  }
+
+  galleryImages.forEach(function (img, i) {
+    img.addEventListener("click", function () { openLightbox(i); });
+  });
+
+  if (lightboxClose) lightboxClose.addEventListener("click", closeLightbox);
+  if (lightboxPrev) lightboxPrev.addEventListener("click", function () { openLightbox(lightboxIndex - 1); });
+  if (lightboxNext) lightboxNext.addEventListener("click", function () { openLightbox(lightboxIndex + 1); });
+  if (lightbox) {
+    lightbox.addEventListener("click", function (e) {
+      if (e.target === lightbox) closeLightbox();
+    });
+  }
+
+  document.addEventListener("keydown", function (e) {
+    if (lightbox && lightbox.classList.contains("open")) {
+      if (e.key === "Escape") closeLightbox();
+      else if (e.key === "ArrowLeft") openLightbox(lightboxIndex - 1);
+      else if (e.key === "ArrowRight") openLightbox(lightboxIndex + 1);
+    } else if (galleryModal && galleryModal.classList.contains("open") && e.key === "Escape") {
+      closeGalleryModal();
+    }
+  });
 
   var savedLang = null;
   try { savedLang = localStorage.getItem(LANG_STORAGE_KEY); } catch (e) {}
