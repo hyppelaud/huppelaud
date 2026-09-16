@@ -49,8 +49,10 @@ var TRANSLATIONS = {
 
   "intro.item1.highlight": { et: "Neli päeva", en: "Four days" },
   "intro.item1.rest": { et: "oma toote ehitamiseks", en: "to build your own product" },
-  "intro.item2": { et: "Anname vajalikud tööriistad ja ekspertteadmised", en: "Supported by the tools and expertise you need" },
-  "intro.item3": { et: "Avasta enda jaoks tehnoloogia- ja ettevõtlusmaailm", en: "Enabling you to start your technology and entrepreneurship journey" },
+  "intro.item2.rest": { et: "Anname vajalikud", en: "Supported by the" },
+  "intro.item2.highlight": { et: "tööriistad ja ekspertteadmised", en: "tools and expertise you need" },
+  "intro.item3.rest": { et: "Avasta enda jaoks", en: "Enabling you to start your" },
+  "intro.item3.highlight": { et: "tehnoloogia- ja ettevõtlusmaailm", en: "technology and entrepreneurship journey" },
 
   "events.viewPhotos": { et: "Vaata pilte", en: "View photos" },
   "events.viewPhotosTitle": { et: "Hüppelaud 2026 pildid", en: "Hüppelaud 2026 photos" },
@@ -144,6 +146,50 @@ var TRANSLATIONS = {
     et: "TUM & TU Delft  ✳  Wise 20 Under 20 (2020)  ✳  Praegu SYNLABis",
     en: "TUM & TU Delft  ✳  Wise 20 Under 20 (2020)  ✳  Currently at SYNLAB"
   },
+
+  "press.badge": { et: "Meedias", en: "In the news" },
+  "press.cta": { et: "Loe lugu →", en: "Read the story →" },
+
+  "press.headline1": { et: "Kümnes Hüppelaud tõi kokku tulevased ükssarvikud", en: "The tenth Hüppelaud brought together future unicorns" },
+  "press.desc1": {
+    et: "Loe, mida kirjutab Vabamu 2026. aasta Hüppelaua kohta.",
+    en: "Read what Vabamu wrote about Hüppelaud 2026."
+  },
+  "press.photoAlt1": { et: "Hüppelaud 2026 osalejad Study Bites loos", en: "Hüppelaud 2026 participants in the Study Bites story" },
+
+  "press.headline2": { et: "Suvekool Hüppelaud pakub noortele tehnoloogia- ja ettevõtlusoskusi", en: "Summer school Hüppelaud offers young people technology and entrepreneurship skills" },
+  "press.desc2": {
+    et: "Loe, mida kirjutab Saarte Hääl 2025. aasta Hüppelaua suvekooli kohta.",
+    en: "Read what Saarte Hääl wrote about the 2025 Hüppelaud summer school."
+  },
+  "press.photoAlt2": { et: "Hüppelaud 2025 osalejad Kuressaares", en: "Hüppelaud 2025 participants in Kuressaare" },
+
+  "press.headline3": { et: "Noorte Vabamu kutsub 14-19-aastaseid noori Hüppelaua suvekooli", en: "Noorte Vabamu invites 14–19-year-olds to the Hüppelaud summer school" },
+  "press.desc3": {
+    et: "Loe, mida kirjutab Postimehe Haridusportaal 2022. aasta Hüppelaua suvekooli kohta.",
+    en: "Read what Postimees' Haridusportaal wrote about the 2022 Hüppelaud summer school."
+  },
+  "press.photoAlt3": { et: "Hüppelaud 2022 osalejad Proto avastuskeskuses", en: "Hüppelaud 2022 participants at the Proto discovery centre" },
+
+  "press.headline4": { et: "Noored leiutajad mõtlevad suvekoolis välja uusi tooteid", en: "Young inventors come up with new products at summer school" },
+  "press.desc4": {
+    et: "Loe, mida kirjutab ERR 2019. aasta Hüppelaua suvekooli kohta.",
+    en: "Read what ERR wrote about the 2019 Hüppelaud summer school."
+  },
+  "press.photoAlt4": { et: "Hüppelaud 2019 osalejad toodet ehitamas", en: "Hüppelaud 2019 participants building a product" },
+
+  "press.headline5": { et: "Telliskivi loomelinnakus algab nädalane noorte leiutajate suvekool Hüppelaud", en: "A week-long summer school for young inventors, Hüppelaud, begins in Telliskivi Creative City" },
+  "press.desc5": {
+    et: "Loe, mida kirjutab Geenius 2018. aasta Hüppelaua suvekooli kohta.",
+    en: "Read what Geenius wrote about the 2018 Hüppelaud summer school."
+  },
+  "press.photoAlt5": { et: "Hüppelaud 2018 osalejad Telliskivis", en: "Hüppelaud 2018 participants in Telliskivi" },
+
+  "press.dot1": { et: "Slaid 1", en: "Slide 1" },
+  "press.dot2": { et: "Slaid 2", en: "Slide 2" },
+  "press.dot3": { et: "Slaid 3", en: "Slide 3" },
+  "press.dot4": { et: "Slaid 4", en: "Slide 4" },
+  "press.dot5": { et: "Slaid 5", en: "Slide 5" },
 
   "support.badge": { et: "Lapsevanem", en: "Parent" },
   "support.title": { et: "Toeta meid", en: "Support us" },
@@ -338,6 +384,43 @@ document.addEventListener("DOMContentLoaded", function () {
         heroSlideIndex = (heroSlideIndex + 1) % heroSlides.length;
         heroSlides[heroSlideIndex].classList.add("active");
       }, 5000);
+    }
+  }
+
+  var pressCarousel = document.getElementById("pressCarousel");
+  if (pressCarousel) {
+    var pressSlides = Array.prototype.slice.call(pressCarousel.querySelectorAll(".press-card"));
+    var pressDots = Array.prototype.slice.call(pressCarousel.querySelectorAll(".press-dot"));
+    var pressIndex = 0;
+    var pressTimer = null;
+
+    function pressGoTo(i) {
+      pressSlides[pressIndex].classList.remove("is-active");
+      if (pressDots[pressIndex]) pressDots[pressIndex].classList.remove("is-active");
+      pressIndex = (i + pressSlides.length) % pressSlides.length;
+      pressSlides[pressIndex].classList.add("is-active");
+      if (pressDots[pressIndex]) pressDots[pressIndex].classList.add("is-active");
+    }
+
+    function pressStart() {
+      pressTimer = setInterval(function () { pressGoTo(pressIndex + 1); }, 5000);
+    }
+
+    function pressStop() {
+      if (pressTimer) clearInterval(pressTimer);
+    }
+
+    if (pressSlides.length > 1) {
+      pressDots.forEach(function (dot, i) {
+        dot.addEventListener("click", function () {
+          pressStop();
+          pressGoTo(i);
+          pressStart();
+        });
+      });
+      pressCarousel.addEventListener("mouseenter", pressStop);
+      pressCarousel.addEventListener("mouseleave", pressStart);
+      pressStart();
     }
   }
 
