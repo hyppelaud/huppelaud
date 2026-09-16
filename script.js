@@ -262,7 +262,6 @@ var TRANSLATIONS = {
   "partners.tier1Price": { et: "alates 500 €", en: "from €500" },
   "partners.tier1Benefit1": { et: "Logo veebilehel ja üritusmaterjalidel", en: "Logo on the website and event materials" },
 
-  "partners.tier2Badge": { et: "Populaarseim", en: "Most popular" },
   "partners.tier2Name": { et: "Partner", en: "Partner" },
   "partners.tier2Price": { et: "alates 1500 €", en: "from €1,500" },
   "partners.tier2Benefit1": { et: "Kõik Toetaja hüved", en: "Everything in Supporter" },

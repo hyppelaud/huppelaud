@@ -465,6 +465,7 @@ h3 { font-variation-settings: "wght" 700, "wdth" 120; }
 
 /* ---------- Support ---------- */
 .support, .partners {
+  width: calc(100% - 24px);
   max-width: var(--container);
   margin: 20px auto 0;
   padding: 48px 28px;
@@ -763,22 +764,6 @@ h3 { font-variation-settings: "wght" 700, "wdth" 120; }
 
 .ptier-card--featured { box-shadow: 0 0 0 2px var(--olive-badge); }
 
-.ptier-badge {
-  position: absolute;
-  top: -12px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--olive-badge);
-  color: #fff;
-  font-size: 10px;
-  font-weight: 700;
-  padding: 4px 10px;
-  border-radius: 100px;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  white-space: nowrap;
-}
-
 .ptier-name {
   display: block;
   font-weight: 700;
@@ -855,6 +840,7 @@ h3 { font-variation-settings: "wght" 700, "wdth" 120; }
 
 /* ---------- Buyout ---------- */
 .buyout {
+  width: calc(100% - 24px);
   max-width: var(--container);
   margin: 20px auto 0;
   padding: 48px 28px;
@@ -903,7 +889,7 @@ h3 { font-variation-settings: "wght" 700, "wdth" 120; }
   justify-content: center;
   align-items: center;
   gap: 22px;
-  margin-bottom: 14px;
+  margin: 24px 0;
   opacity: 0.8;
 }
 .press-outlets-logo { height: 20px; width: auto; }
