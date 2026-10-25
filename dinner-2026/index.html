@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hüppelaud Dinner</title>
 <meta name="robots" content="noindex">
-<meta name="description" content="RSVP for the Hüppelaud dinner — pick your evenings, dietary needs, and menu.">
+<meta name="description" content="RSVP for the Hüppelaud dinner on 12 November — let us know you're coming and pick your menu.">
 <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
 <link rel="stylesheet" href="../styles.css">
 <style>
@@ -83,44 +83,39 @@
   }
   #name:focus { outline: none; border-color: var(--blue); }
 
-  .avail-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(82px, 1fr));
+  .attend-toggle {
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
   }
-  .avail-day {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
-    padding: 14px 6px;
+  .attend-option {
+    flex: 1;
+    min-width: 170px;
+    padding: 16px 18px;
     border-radius: var(--radius-md);
     border: 1.5px solid rgba(0, 0, 0, 0.12);
     background: #fff;
     font-family: "Open Sauce Sans", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
     color: var(--text);
+    text-align: center;
     cursor: pointer;
     transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
   }
-  .avail-day .dow {
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    color: var(--text-soft);
-  }
-  .avail-day .dnum {
-    font-size: 17px;
-    font-weight: 700;
-  }
-  .avail-day:hover { border-color: var(--blue); }
-  .avail-day.selected {
+  .attend-option:hover { border-color: var(--blue); }
+  .attend-option.selected[data-attending="yes"] {
     background: var(--blue);
     border-color: var(--blue);
     color: #fff;
   }
-  .avail-day.selected .dow { color: rgba(255, 255, 255, 0.8); }
+  .attend-option.selected[data-attending="no"] {
+    background: #6b7280;
+    border-color: #6b7280;
+    color: #fff;
+  }
+
+  .field.hidden-field { display: none; }
 
   .menu-options {
     display: flex;
@@ -237,7 +232,7 @@
       <h2>Good to know</h2>
       <dl class="dinner-details">
         <dt>When</dt>
-        <dd>One evening, last week of September &mdash; pick your evenings below</dd>
+        <dd>Thursday, 12 November 2026 at 6:00 PM</dd>
         <dt>Where</dt>
         <dd><a href="https://altoresto.ee/" target="_blank" rel="noopener">Alto Resto</a>, Paldiski mnt 25&ndash;2, Tallinn (Mayeri Ärikvartal)</dd>
         <dt>Menu</dt>
@@ -254,18 +249,14 @@
       </div>
 
       <div class="field">
-        <label>Which evenings work? <span class="field-hint">(last week of September, from 6pm — pick as many as work for you)</span></label>
-        <div class="avail-grid" id="availGrid">
-          <button type="button" class="avail-day" data-date="2026-09-25" aria-pressed="false"><span class="dow">Fri</span><span class="dnum">25</span></button>
-          <button type="button" class="avail-day" data-date="2026-09-26" aria-pressed="false"><span class="dow">Sat</span><span class="dnum">26</span></button>
-          <button type="button" class="avail-day" data-date="2026-09-27" aria-pressed="false"><span class="dow">Sun</span><span class="dnum">27</span></button>
-          <button type="button" class="avail-day" data-date="2026-09-28" aria-pressed="false"><span class="dow">Mon</span><span class="dnum">28</span></button>
-          <button type="button" class="avail-day" data-date="2026-09-29" aria-pressed="false"><span class="dow">Tue</span><span class="dnum">29</span></button>
-          <button type="button" class="avail-day" data-date="2026-09-30" aria-pressed="false"><span class="dow">Wed</span><span class="dnum">30</span></button>
+        <label>Will you be there? <span class="field-hint">Thu, Nov 12, from 6pm</span></label>
+        <div class="attend-toggle" id="attendToggle">
+          <button type="button" class="attend-option" data-attending="yes" aria-pressed="false">Yes, I'll be there 🎉</button>
+          <button type="button" class="attend-option" data-attending="no" aria-pressed="false">Can't make it this time</button>
         </div>
       </div>
 
-      <div class="field">
+      <div class="field" id="menuField">
         <label>Main course</label>
         <div class="menu-options" id="menuOptions">
           <label class="menu-option">
@@ -294,7 +285,7 @@
         <p class="dinner-note">Dessert and drinks — pick on the night.</p>
       </div>
 
-      <p class="form-error" id="formError" hidden>Please add your name, pick at least one evening, and choose a main.</p>
+      <p class="form-error" id="formError" hidden>Please add your name, let us know if you're coming, and choose a main.</p>
       <p class="form-success" id="formSuccess" hidden>Thanks — your RSVP is in 🎉</p>
 
       <button type="button" class="btn btn-primary" id="submitBtn" style="width: 100%; justify-content: center;">Send my RSVP</button>
