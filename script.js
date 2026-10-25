@@ -155,7 +155,7 @@ var TRANSLATIONS = {
     et: "Loe, mida kirjutab Laura Kalmus Märka last blogis oma esimesest Hüppelaua kogemusest.",
     en: "Read what Laura Kalmus wrote on Märka last about her first Hüppelaud experience."
   },
-  "press.photoAlt6": { et: "Hüppelaud 2026 osalejad oma toodet ehitamas", en: "Hüppelaud 2026 participants building their product" },
+  "press.photoAlt6": { et: "Hüppelaud 2026 meeskond esitlemas oma prototüüpi", en: "Hüppelaud 2026 team presenting their prototype" },
   "press.date6": { et: "21.10.2026", en: "21 October 2026" },
 
   "press.headline1": { et: "Kümnes Hüppelaud tõi kokku tulevased ükssarvikud", en: "The tenth Hüppelaud brought together future unicorns" },
