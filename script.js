@@ -150,6 +150,14 @@ var TRANSLATIONS = {
   "press.badge": { et: "Meedias", en: "In the news" },
   "press.cta": { et: "Loe lugu →", en: "Read the story →" },
 
+  "press.headline6": { et: "Häkatonile varasema kogemuseta – mida Hüppelaud mulle õpetas?", en: "No prior hackathon experience – what Hüppelaud taught me" },
+  "press.desc6": {
+    et: "Loe, mida kirjutab Laura Kalmus Märka last blogis oma esimesest Hüppelaua kogemusest.",
+    en: "Read what Laura Kalmus wrote on Märka last about her first Hüppelaud experience."
+  },
+  "press.photoAlt6": { et: "Hüppelaud 2026 osalejad oma toodet ehitamas", en: "Hüppelaud 2026 participants building their product" },
+  "press.date6": { et: "21.10.2026", en: "21 October 2026" },
+
   "press.headline1": { et: "Kümnes Hüppelaud tõi kokku tulevased ükssarvikud", en: "The tenth Hüppelaud brought together future unicorns" },
   "press.desc1": {
     et: "Loe, mida kirjutab Vabamu 2026. aasta Hüppelaua kohta.",
@@ -190,6 +198,7 @@ var TRANSLATIONS = {
   "press.dot3": { et: "Slaid 3", en: "Slide 3" },
   "press.dot4": { et: "Slaid 4", en: "Slide 4" },
   "press.dot5": { et: "Slaid 5", en: "Slide 5" },
+  "press.dot6": { et: "Slaid 6", en: "Slide 6" },
 
   "support.badge": { et: "Lapsevanem", en: "Parent" },
   "support.title": { et: "Toeta meid", en: "Support us" },

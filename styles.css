@@ -949,6 +949,14 @@ h3 { font-variation-settings: "wght" 700, "wdth" 120; }
   margin: 0 0 8px;
 }
 
+.press-date {
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--text-soft);
+}
+.press-date::before { content: "· "; }
+
 .press-headline {
   font-size: clamp(19px, 2.4vw, 24px);
   margin: 0 0 10px;
