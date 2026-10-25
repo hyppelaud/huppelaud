@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hüppelaud//Dinner 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:huppelaud-dinner-2026@huppelaud.eu
+DTSTAMP:20261025T000000Z
+DTSTART:20261112T160000Z
+DTEND:20261112T190000Z
+SUMMARY:Hüppelaud Dinner
+DESCRIPTION:An evening to bring together everyone behind Hüppelaud -- organizers\, partners\, and friends\, old and new.\n\nRSVP: https://huppelaud.eu/dinner-2026/
+LOCATION:Alto Resto\, Paldiski mnt 25-2\, Tallinn
+URL:https://huppelaud.eu/dinner-2026/
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

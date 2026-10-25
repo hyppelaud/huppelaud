@@ -202,6 +202,94 @@
     font-size: 17px;
     color: var(--text-soft);
   }
+
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(24, 24, 27, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 100;
+  }
+  .modal-overlay[hidden] { display: none; }
+
+  .modal-card {
+    position: relative;
+    background: #fff;
+    border-radius: var(--radius-lg);
+    padding: 36px 28px 28px;
+    max-width: 420px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    border-radius: 100px;
+    border: none;
+    background: rgba(0, 0, 0, 0.06);
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+    color: var(--text-soft);
+  }
+  .modal-close:hover { background: rgba(0, 0, 0, 0.1); }
+
+  .modal-card h2 {
+    font-size: 24px;
+    margin: 16px 0 8px;
+  }
+  .modal-subtitle {
+    font-size: 15px;
+    color: var(--text-soft);
+    margin: 0 0 24px;
+  }
+
+  .modal-section { margin-bottom: 24px; }
+  .modal-section-label {
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 8px;
+  }
+  .modal-location-name { font-weight: 700; margin: 0; }
+  .modal-location-address { margin: 2px 0 10px; color: var(--text-soft); font-size: 15px; }
+  .modal-link {
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+
+  .modal-cal-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .btn-secondary-small {
+    flex: 1;
+    min-width: 150px;
+    padding: 12px 16px;
+    border-radius: var(--radius-md);
+    border: 1.5px solid rgba(0, 0, 0, 0.12);
+    background: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--text);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .btn-secondary-small:hover { border-color: var(--blue); color: var(--blue); }
 </style>
 </head>
 <body>
@@ -294,6 +382,32 @@
 
   </section>
 </main>
+
+<div class="modal-overlay" id="rsvpModal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button type="button" class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+    <span class="badge badge-blue" id="modalBadge">You're in</span>
+    <h2 id="modalTitle">See you Nov 12!</h2>
+    <p class="modal-subtitle" id="modalSubtitle">Thursday, 12 November 2026 at 6:00 PM.</p>
+
+    <div class="modal-section" id="modalLocationSection">
+      <div class="modal-section-label">Location</div>
+      <p class="modal-location-name">Alto Resto</p>
+      <p class="modal-location-address">Paldiski mnt 25&ndash;2, Tallinn (Mayeri &Auml;rikvartal)</p>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Alto+Resto+Paldiski+mnt+25-2+Tallinn" target="_blank" rel="noopener" class="modal-link">Get directions &rarr;</a>
+    </div>
+
+    <div class="modal-section" id="modalCalendarSection">
+      <div class="modal-section-label">Add to calendar</div>
+      <div class="modal-cal-buttons">
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=H%C3%BCppelaud+Dinner&amp;dates=20261112T160000Z%2F20261112T190000Z&amp;details=An+evening+to+bring+together+everyone+behind+H%C3%BCppelaud+--+organizers%2C+partners%2C+and+friends%2C+old+and+new.%0A%0ARSVP%3A+https%3A%2F%2Fhuppelaud.eu%2Fdinner-2026%2F&amp;location=Alto+Resto%2C+Paldiski+mnt+25-2%2C+Tallinn&amp;ctz=Europe%2FTallinn" target="_blank" rel="noopener" class="btn-secondary-small">Google Calendar</a>
+        <a href="huppelaud-dinner-2026.ics" download="huppelaud-dinner-2026.ics" class="btn-secondary-small">Apple / Outlook (.ics)</a>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-primary" id="modalDoneBtn" style="width: 100%; justify-content: center;">Done</button>
+  </div>
+</div>
 
 <footer class="site-footer">
   <div class="footer-top">
