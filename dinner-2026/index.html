@@ -9,6 +9,36 @@
 <link rel="icon" type="image/svg+xml" href="../assets/images/logo.svg">
 <link rel="stylesheet" href="../styles.css">
 <style>
+  .hero {
+    display: flex;
+    flex-direction: column;
+    min-height: 820px;
+  }
+
+  .hero-scrim {
+    background: rgba(0, 0, 0, 0.12);
+  }
+
+  .hero-carousel img {
+    object-position: 25% center;
+  }
+
+  .navbar .logo {
+    display: inline-flex;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 8px 16px;
+    border-radius: 100px;
+  }
+
+  .hero-content {
+    margin: auto -24px -64px;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    padding: 32px 24px 40px;
+  }
+
   @media (max-width: 480px) {
     .hero-content h1 {
       font-size: 28px;
@@ -295,6 +325,10 @@
 <body>
 
 <header class="hero" id="top">
+  <div class="hero-carousel" aria-hidden="true">
+    <img src="../assets/images/hero-huppelaud-2026-2.jpg" alt="" class="active">
+  </div>
+  <div class="hero-scrim" aria-hidden="true"></div>
   <nav class="navbar">
     <a href="../" class="logo" aria-label="Hüppelaud avaleht">
       <img src="../assets/images/logo.svg" alt="Hüppelaud">
