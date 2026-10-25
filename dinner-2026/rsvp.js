@@ -2,28 +2,29 @@
   // Set after deploying the Apps Script Web App (see Code.gs / deploy instructions).
   var SCRIPT_URL = "https://script.google.com/macros/s/AKfycby8TaLgMi6KIJ41ed4Ol5toUDG-zuXKIvTdWFwlS9jgubqMPNc1OhCcxS1wNlQ6gt8/exec";
 
-  var DAY_LABELS = {
-    "2026-09-25": "Fri, Sep 25",
-    "2026-09-26": "Sat, Sep 26",
-    "2026-09-27": "Sun, Sep 27",
-    "2026-09-28": "Mon, Sep 28",
-    "2026-09-29": "Tue, Sep 29",
-    "2026-09-30": "Wed, Sep 30"
+  // Sent to the Sheet under the "Evenings" column from the original availability-picker
+  // version of this page — kept as-is so the existing Apps Script deployment doesn't need
+  // redeploying. Rename that column header in the Sheet itself if you'd like it to say
+  // "Attending" instead; no code change needed for that.
+  var ATTENDING_LABELS = {
+    yes: "Yes, attending",
+    no: "Not attending"
   };
 
-  var selectedDays = new Set();
+  var attending = null;
 
-  document.querySelectorAll(".avail-day").forEach(function (btn) {
+  var attendButtons = document.querySelectorAll(".attend-option");
+  var menuField = document.getElementById("menuField");
+
+  attendButtons.forEach(function (btn) {
     btn.addEventListener("click", function () {
-      var date = btn.dataset.date;
-      var isSelected = selectedDays.has(date);
-      if (isSelected) {
-        selectedDays.delete(date);
-      } else {
-        selectedDays.add(date);
-      }
-      btn.classList.toggle("selected", !isSelected);
-      btn.setAttribute("aria-pressed", String(!isSelected));
+      attending = btn.dataset.attending;
+      attendButtons.forEach(function (b) {
+        var isThis = b === btn;
+        b.classList.toggle("selected", isThis);
+        b.setAttribute("aria-pressed", String(isThis));
+      });
+      menuField.classList.toggle("hidden-field", attending === "no");
     });
   });
 
@@ -36,11 +37,12 @@
   submitBtn.addEventListener("click", function () {
     var name = nameInput.value.trim();
     var menuInput = document.querySelector('input[name="menu"]:checked');
+    var needsMenu = attending === "yes";
 
     successEl.hidden = true;
 
-    if (!name || selectedDays.size === 0 || !menuInput) {
-      errorEl.textContent = "Please add your name, pick at least one evening, and choose a main.";
+    if (!name || !attending || (needsMenu && !menuInput)) {
+      errorEl.textContent = "Please add your name, let us know if you're coming, and choose a main.";
       errorEl.hidden = false;
       return;
     }
@@ -53,12 +55,7 @@
 
     errorEl.hidden = true;
 
-    var menu = menuInput.value;
-
-    var chosenDates = Array.from(selectedDays)
-      .sort()
-      .map(function (d) { return DAY_LABELS[d]; })
-      .join(", ");
+    var menu = needsMenu ? menuInput.value : "N/A";
 
     submitBtn.disabled = true;
     submitBtn.textContent = "Sending…";
@@ -67,7 +64,7 @@
       method: "POST",
       mode: "cors",
       headers: { "Content-Type": "text/plain;charset=utf-8" },
-      body: JSON.stringify({ name: name, evenings: chosenDates, menu: menu })
+      body: JSON.stringify({ name: name, evenings: ATTENDING_LABELS[attending], menu: menu })
     })
       .then(function (res) {
         if (!res.ok) throw new Error("Request failed");
@@ -75,6 +72,9 @@
       })
       .then(function () {
         submitBtn.textContent = "Sent ✓";
+        successEl.textContent = attending === "yes"
+          ? "Thanks — we'll see you there 🎉"
+          : "Thanks for letting us know — hope to see you next time.";
         successEl.hidden = false;
       })
       .catch(function () {
