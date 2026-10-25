@@ -34,6 +34,47 @@
   var submitBtn = document.getElementById("submitBtn");
   var submitLabel = submitBtn.textContent;
 
+  var modal = document.getElementById("rsvpModal");
+  var modalBadge = document.getElementById("modalBadge");
+  var modalTitle = document.getElementById("modalTitle");
+  var modalSubtitle = document.getElementById("modalSubtitle");
+  var modalLocationSection = document.getElementById("modalLocationSection");
+  var modalCalendarSection = document.getElementById("modalCalendarSection");
+  var modalClose = document.getElementById("modalClose");
+  var modalDoneBtn = document.getElementById("modalDoneBtn");
+
+  function openModal(isAttending) {
+    if (isAttending) {
+      modalBadge.textContent = "You're in";
+      modalTitle.textContent = "See you Nov 12!";
+      modalSubtitle.textContent = "Thursday, 12 November 2026 at 6:00 PM.";
+      modalLocationSection.hidden = false;
+      modalCalendarSection.hidden = false;
+    } else {
+      modalBadge.textContent = "Thanks for letting us know";
+      modalTitle.textContent = "Hope to see you next time";
+      modalSubtitle.textContent = "We'll miss you on 12 November — thanks for the RSVP.";
+      modalLocationSection.hidden = true;
+      modalCalendarSection.hidden = true;
+    }
+    modal.hidden = false;
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal() {
+    modal.hidden = true;
+    document.body.style.overflow = "";
+  }
+
+  modalClose.addEventListener("click", closeModal);
+  modalDoneBtn.addEventListener("click", closeModal);
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) closeModal();
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !modal.hidden) closeModal();
+  });
+
   submitBtn.addEventListener("click", function () {
     var name = nameInput.value.trim();
     var menuInput = document.querySelector('input[name="menu"]:checked');
@@ -76,6 +117,7 @@
           ? "Thanks — we'll see you there 🎉"
           : "Thanks for letting us know — hope to see you next time.";
         successEl.hidden = false;
+        openModal(attending === "yes");
       })
       .catch(function () {
         submitBtn.disabled = false;
