@@ -50,7 +50,21 @@
     sections.forEach(function (section) { observer.observe(section); });
   }
 
+  function initPressLinkTracking() {
+    var links = document.querySelectorAll(".press-link");
+    links.forEach(function (link) {
+      link.addEventListener("click", function () {
+        window.hlTrack("press_article_click", {
+          outlet: link.getAttribute("data-outlet") || "",
+          link_url: link.href
+        });
+      });
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
+    initPressLinkTracking();
+
     var banner = document.getElementById("cookieConsent");
     var acceptBtn = document.getElementById("cookieAccept");
     var declineBtn = document.getElementById("cookieDecline");
