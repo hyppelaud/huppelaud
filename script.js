@@ -139,7 +139,7 @@ var TRANSLATIONS = {
   "team.mihkel.tag2": { et: "Mentor 2024–2025", en: "Mentor 2024–2025" },
   "team.mihkel.tag3": { et: "Korraldaja alates 2026", en: "Organizer since 2026" },
   "team.mihkel.bio": {
-    et: "Hüppelaud muutis minu elu ja tõi mind kokku startup-maailmaga. Osalesin ise 2018. ja 2019. aastal, olin mentor 2024. ja 2025. aastal ning alates 2026. aastast vean korraldusmeeskonda. Olen õppinud TUMis Saksamaal ja TU Delftis Hollandis, olnud kaasas mitme idufirma loomisel ning kannan Wise'i „20 Under 20“ (2020) tiitlit. Praegu töötan SYNLABis.",
+    et: "Hüppelaud muutis minu elu ja viis mind kokku startup-maailmaga. Osalesin ise 2018. ja 2019. aastal, olin mentor 2024. ja 2025. aastal ning alates 2026. aastast vean korraldusmeeskonda. Olen õppinud TUMis Saksamaal ja TU Delftis Hollandis, ehitanud mitut idufirmat ning kannan Wise'i „20 Under 20“ (2020) tiitlit. Igapäevaselt SYNLABis.",
     en: "Hüppelaud changed my life and got me into startups. I took part myself in 2018 and 2019, mentored in 2024 and 2025, and have led the organizing team since 2026. I studied at TUM in Germany and TU Delft in the Netherlands, have helped build multiple startups, and am a Wise 20 Under 20 (2020) alumnus. I currently work at SYNLAB."
   },
   "team.mihkel.credentials": {
@@ -219,12 +219,8 @@ var TRANSLATIONS = {
     en: "Your support helps cover the venue, workshops, mentors, and materials for our events, so that no interested young person has to pass up the chance to take part because of financial barriers. Every contribution, whether it's 10 or 1,000 euros, helps us give young people the courage and skills they need to bring their ideas to life."
   },
   "support.donateHeading": {
-    et: "Kasvatame koos Eestile järgmise põlvkonna leiutajaid ja tegijaid",
+    et: "Kasvatame koos Eesti järgmise põlvkonna leiutajaid ja tegijaid",
     en: "Together, let's grow Estonia's next generation of inventors and doers"
-  },
-  "support.donateLead": {
-    et: "Vali sobiv summa ja toeta otse — link töötab kõigi Eesti pankade klientidele, olenemata sinu enda pangast.",
-    en: "Choose an amount and donate directly — the link works for customers of every Estonian bank, whatever bank you use."
   },
   "support.taxNote": {
     et: "Sinu annetus on tulumaksusoodustusega — saad selle oma tuludeklaratsioonis maha arvata.",
@@ -250,8 +246,8 @@ var TRANSLATIONS = {
 
   "support.recurringTitle": { et: "Sea üles püsiannetus", en: "Set up a recurring donation" },
   "support.recurringText": {
-    et: "Mugavaim viis toetada pikaajaliselt — vali igakuine summa, Stripe hoolitseb ülejäänu eest kaardi või otsekorraldusega.",
-    en: "The easiest way to support us long-term — pick a monthly amount and Stripe takes care of the rest, by card or direct debit."
+    et: "Soovid tulumaksusoodustust? Lisa oma isikukood makse selgitusse.",
+    en: "Want the tax deduction? Add your Estonian personal ID code (isikukood) to the payment reference."
   },
   "support.perMonth": { et: "/kuus", en: "/month" },
   "support.recurringCtaShort": { et: "Alusta püsiannetust", en: "Start recurring donation" },
