@@ -53,8 +53,8 @@
 
     <div class="nav-pill">
       <a href="#events" data-i18n="nav.events">Events</a>
-      <a href="#team" data-i18n="nav.team">Team</a>
-      <a href="#contribute" data-i18n="nav.support">Support</a>
+      <a href="#team" data-i18n="nav.team">About us</a>
+      <a href="#contribute" data-i18n="nav.support">Support us</a>
       <a class="lang-select" href="/" data-i18n-href="nav.langHref" hreflang="et" data-i18n-hreflang="nav.langCode" lang="et" data-i18n-lang="nav.langCode" data-i18n="nav.langSwitch">Eesti keeles</a>
     </div>
 
@@ -71,8 +71,8 @@
   <div class="menu-mobile" id="mobileMenu">
     <a href="#meedias" data-i18n="press.badge">In the news</a>
     <a href="#events" data-i18n="nav.events">Events</a>
-    <a href="#team" data-i18n="nav.team">Team</a>
-    <a href="#contribute" data-i18n="nav.support">Support</a>
+    <a href="#team" data-i18n="nav.team">About us</a>
+    <a href="#contribute" data-i18n="nav.support">Support us</a>
     <a class="lang-select" href="/" data-i18n-href="nav.langHref" hreflang="et" data-i18n-hreflang="nav.langCode" lang="et" data-i18n-lang="nav.langCode" data-i18n="nav.langSwitch">Eesti keeles</a>
     <a href="#donate" class="btn btn-donate" data-i18n="nav.donate">Donate</a>
     <a href="#events" class="btn btn-primary" data-i18n="nav.cta">Join</a>
@@ -321,7 +321,6 @@
   </section>
 
   <section class="support" id="contribute" data-track-section="contribute">
-    <span class="badge badge-green" data-i18n="support.badge">Parent</span>
     <div class="support-grid">
       <div class="support-copy">
         <h2 class="section-title support-title" data-i18n="support.title">Support us</h2>
@@ -374,21 +373,35 @@
 
         <div class="recurring-donate">
           <h4 data-i18n="support.recurringTitle">Set up a recurring donation</h4>
-          <p data-i18n="support.recurringText">Set up a recurring transfer in your own online bank using our donation details — recurring donors get access to several exclusive perks.</p>
+          <p data-i18n="support.recurringText">The easiest way to support us long-term — pick a monthly amount and Stripe takes care of the rest, by card or direct debit.</p>
 
-          <div class="recurring-amounts">
-            <span class="chip-amount" data-i18n="support.recurring5">€5/month</span>
-            <span class="chip-amount chip-amount--featured" data-i18n="support.recurring10">€10/month</span>
-            <span class="chip-amount" data-i18n="support.recurring20">€20/month</span>
+          <div class="donate-tiers recurring-tiers">
+            <a class="tier-card" href="https://buy.stripe.com/eVq28r7Th3jkbKWa7k7Zu00" target="_blank" rel="noopener noreferrer">
+              <span class="tier-amount">5 €<span class="tier-period" data-i18n="support.perMonth">/month</span></span>
+              <span class="tier-cta" data-i18n="support.recurringCtaShort">Start recurring donation</span>
+            </a>
+            <a class="tier-card tier-card--featured" href="https://buy.stripe.com/eVqcN5ehF2fgdT42ES7Zu01" target="_blank" rel="noopener noreferrer">
+              <span class="tier-badge" data-i18n="support.recommended">Recommended</span>
+              <span class="tier-amount">10 €<span class="tier-period" data-i18n="support.perMonth">/month</span></span>
+              <span class="tier-cta" data-i18n="support.recurringCtaShort">Start recurring donation</span>
+            </a>
+            <a class="tier-card" href="https://buy.stripe.com/eVq28rehF4no16ia7k7Zu02" target="_blank" rel="noopener noreferrer">
+              <span class="tier-amount">20 €<span class="tier-period" data-i18n="support.perMonth">/month</span></span>
+              <span class="tier-cta" data-i18n="support.recurringCtaShort">Start recurring donation</span>
+            </a>
           </div>
 
-          <ol class="recurring-steps">
-            <li data-i18n="support.recurringStep1">Open your online bank</li>
-            <li data-i18n="support.recurringStep2">Create a new recurring payment (standing order)</li>
-            <li data-i18n="support.recurringStep3">Enter our donation details</li>
-          </ol>
+          <p class="recurring-fineprint" data-i18n="support.recurringFineprint">Secure payment via Stripe. Cancel anytime from the link in your Stripe confirmation email.</p>
 
-          <button type="button" class="btn btn-ghost-green" id="showBankDetails" data-i18n="support.recurringCta">View bank details</button>
+          <details class="donate-alt">
+            <summary data-i18n="support.altBankSummary">Prefer to set up a standing order yourself?</summary>
+            <ol class="recurring-steps">
+              <li data-i18n="support.recurringStep1">Open your online bank</li>
+              <li data-i18n="support.recurringStep2">Create a new recurring payment (standing order)</li>
+              <li data-i18n="support.recurringStep3">Enter our donation details</li>
+            </ol>
+            <button type="button" class="btn btn-ghost-green" id="showBankDetails" data-i18n="support.recurringCta">View bank details</button>
+          </details>
         </div>
 
         <details class="donate-alt" id="donateAlt">
@@ -417,7 +430,7 @@
   </section>
 
   <section class="partners" id="partners" data-track-section="partners">
-    <span class="badge badge-olive" data-i18n="partners.badge">Organization</span>
+    <span class="badge badge-olive" data-i18n="partners.badge">Organizations</span>
     <div class="partners-grid">
       <div class="partners-copy">
         <h2 class="section-title partners-title" data-i18n="partners.title">Let's work together</h2>
@@ -452,7 +465,6 @@
             </ul>
           </div>
         </div>
-        <p class="tiers-note" data-i18n="partners.tiersNote">*Prices are indicative — we'll tailor the details together.</p>
 
         <a href="mailto:tere@huppelaud.eu" class="btn btn-olive" data-i18n="partners.cta">Get in touch</a>
       </div>

@@ -180,8 +180,8 @@
 
     <div class="nav-pill">
       <a href="#events" data-i18n="nav.events">Üritused</a>
-      <a href="#team" data-i18n="nav.team">Meeskond</a>
-      <a href="#contribute" data-i18n="nav.support">Toetajad</a>
+      <a href="#team" data-i18n="nav.team">Meist</a>
+      <a href="#contribute" data-i18n="nav.support">Toeta meid</a>
       <a class="lang-select" href="/en/" data-i18n-href="nav.langHref" hreflang="en" data-i18n-hreflang="nav.langCode" lang="en" data-i18n-lang="nav.langCode" data-i18n="nav.langSwitch">In English</a>
     </div>
 
@@ -198,8 +198,8 @@
   <div class="menu-mobile" id="mobileMenu">
     <a href="#meedias" data-i18n="press.badge">Meedias</a>
     <a href="#events" data-i18n="nav.events">Üritused</a>
-    <a href="#team" data-i18n="nav.team">Meeskond</a>
-    <a href="#contribute" data-i18n="nav.support">Toetajad</a>
+    <a href="#team" data-i18n="nav.team">Meist</a>
+    <a href="#contribute" data-i18n="nav.support">Toeta meid</a>
     <a class="lang-select" href="/en/" data-i18n-href="nav.langHref" hreflang="en" data-i18n-hreflang="nav.langCode" lang="en" data-i18n-lang="nav.langCode" data-i18n="nav.langSwitch">In English</a>
     <a href="#donate" class="btn btn-donate" data-i18n="nav.donate">Toeta</a>
     <a href="#events" class="btn btn-primary" data-i18n="nav.cta">Osale</a>
@@ -448,7 +448,6 @@
   </section>
 
   <section class="support" id="contribute" data-track-section="contribute">
-    <span class="badge badge-green" data-i18n="support.badge">Lapsevanem</span>
     <div class="support-grid">
       <div class="support-copy">
         <h2 class="section-title support-title" data-i18n="support.title">Toeta meid</h2>
@@ -500,22 +499,36 @@
         </div>
 
         <div class="recurring-donate">
-          <h4 data-i18n="support.recurringTitle">Sea üles püsimakse</h4>
-          <p data-i18n="support.recurringText">Loo oma internetipangas korduv makse meie annetuse andmetega — püsitoetusega ootavad sind mitmed boonused.</p>
+          <h4 data-i18n="support.recurringTitle">Sea üles püsiannetus</h4>
+          <p data-i18n="support.recurringText">Mugavaim viis toetada pikaajaliselt — vali igakuine summa, Stripe hoolitseb ülejäänu eest kaardi või otsekorraldusega.</p>
 
-          <div class="recurring-amounts">
-            <span class="chip-amount" data-i18n="support.recurring5">5 €/kuus</span>
-            <span class="chip-amount chip-amount--featured" data-i18n="support.recurring10">10 €/kuus</span>
-            <span class="chip-amount" data-i18n="support.recurring20">20 €/kuus</span>
+          <div class="donate-tiers recurring-tiers">
+            <a class="tier-card" href="https://buy.stripe.com/eVq28r7Th3jkbKWa7k7Zu00" target="_blank" rel="noopener noreferrer">
+              <span class="tier-amount">5 €<span class="tier-period" data-i18n="support.perMonth">/kuus</span></span>
+              <span class="tier-cta" data-i18n="support.recurringCtaShort">Alusta püsiannetust</span>
+            </a>
+            <a class="tier-card tier-card--featured" href="https://buy.stripe.com/eVqcN5ehF2fgdT42ES7Zu01" target="_blank" rel="noopener noreferrer">
+              <span class="tier-badge" data-i18n="support.recommended">Soovitatud</span>
+              <span class="tier-amount">10 €<span class="tier-period" data-i18n="support.perMonth">/kuus</span></span>
+              <span class="tier-cta" data-i18n="support.recurringCtaShort">Alusta püsiannetust</span>
+            </a>
+            <a class="tier-card" href="https://buy.stripe.com/eVq28rehF4no16ia7k7Zu02" target="_blank" rel="noopener noreferrer">
+              <span class="tier-amount">20 €<span class="tier-period" data-i18n="support.perMonth">/kuus</span></span>
+              <span class="tier-cta" data-i18n="support.recurringCtaShort">Alusta püsiannetust</span>
+            </a>
           </div>
 
-          <ol class="recurring-steps">
-            <li data-i18n="support.recurringStep1">Ava oma internetipank</li>
-            <li data-i18n="support.recurringStep2">Loo uus püsimakse (otsekorraldus)</li>
-            <li data-i18n="support.recurringStep3">Sisesta meie annetuse andmed</li>
-          </ol>
+          <p class="recurring-fineprint" data-i18n="support.recurringFineprint">Turvaline makse Stripe kaudu. Tühista igal ajal Stripe kinnituskirjas olevalt lingilt.</p>
 
-          <button type="button" class="btn btn-ghost-green" id="showBankDetails" data-i18n="support.recurringCta">Vaata pangaandmeid</button>
+          <details class="donate-alt">
+            <summary data-i18n="support.altBankSummary">Eelistad panga püsimakset ise seadistada?</summary>
+            <ol class="recurring-steps">
+              <li data-i18n="support.recurringStep1">Ava oma internetipank</li>
+              <li data-i18n="support.recurringStep2">Loo uus püsimakse (otsekorraldus)</li>
+              <li data-i18n="support.recurringStep3">Sisesta meie annetuse andmed</li>
+            </ol>
+            <button type="button" class="btn btn-ghost-green" id="showBankDetails" data-i18n="support.recurringCta">Vaata pangaandmeid</button>
+          </details>
         </div>
 
         <details class="donate-alt" id="donateAlt">
@@ -544,7 +557,7 @@
   </section>
 
   <section class="partners" id="partners" data-track-section="partners">
-    <span class="badge badge-olive" data-i18n="partners.badge">Organisatsioon</span>
+    <span class="badge badge-olive" data-i18n="partners.badge">Asutused</span>
     <div class="partners-grid">
       <div class="partners-copy">
         <h2 class="section-title partners-title" data-i18n="partners.title">Teeme koostööd</h2>
@@ -579,7 +592,6 @@
             </ul>
           </div>
         </div>
-        <p class="tiers-note" data-i18n="partners.tiersNote">*Hinnad on suunavad — täpsustame koostöövormi koos kohtumisel.</p>
 
         <a href="mailto:tere@huppelaud.eu" class="btn btn-olive" data-i18n="partners.cta">Võta ühendust</a>
       </div>
@@ -615,7 +627,7 @@
         <li data-i18n="buyout.feature2">Meie kogenud mentorid ja korraldusmeeskond</li>
         <li data-i18n="buyout.feature3">Teemad ja väljakutsed kohandatud vastavalt teie soovile</li>
       </ul>
-      <a href="mailto:tere@huppelaud.eu?subject=Telli%20oma%20hoosloome" data-i18n-href="buyout.mailto" class="btn btn-primary" data-i18n="buyout.cta">Küsi hinda</a>
+      <a href="mailto:tere@huppelaud.eu?subject=Telli%20oma%20hoosloome" data-i18n-href="buyout.mailto" class="btn btn-primary" data-i18n="buyout.cta">Korraldame koos</a>
     </div>
   </section>
 

@@ -27,8 +27,8 @@ var TRANSLATIONS = {
   "nav.langCode": { et: "en", en: "et" },
   "nav.openMenu": { et: "Ava menüü", en: "Open menu" },
   "nav.events": { et: "Üritused", en: "Events" },
-  "nav.team": { et: "Meeskond", en: "Team" },
-  "nav.support": { et: "Toetajad", en: "Support" },
+  "nav.team": { et: "Meist", en: "About us" },
+  "nav.support": { et: "Toeta meid", en: "Support us" },
   "nav.cta": { et: "Osale", en: "Join" },
   "nav.donate": { et: "Toeta", en: "Donate" },
 
@@ -200,7 +200,6 @@ var TRANSLATIONS = {
   "press.dot5": { et: "Slaid 5", en: "Slide 5" },
   "press.dot6": { et: "Slaid 6", en: "Slide 6" },
 
-  "support.badge": { et: "Lapsevanem", en: "Parent" },
   "support.title": { et: "Toeta meid", en: "Support us" },
   "support.p1": {
     et: "Hüppelaud on koht, kus noored saavad esitleda oma ideid, arendada meeskonnas prototüüpe ja õppida parimatelt mentoritelt Eesti tehnoloogiamaastikul. See kogemus võib olla just see, mis paneb alguse uuele karjäärile või järgmisele läbimurdelisele iduettevõttele.",
@@ -240,20 +239,24 @@ var TRANSLATIONS = {
   },
   "support.testimonialAttribution": { et: "— Hüppelaua osaleja, 2017", en: "— Hüppelaud participant, 2017" },
 
-  "support.recurringTitle": { et: "Sea üles püsimakse", en: "Set up a recurring donation" },
+  "support.recurringTitle": { et: "Sea üles püsiannetus", en: "Set up a recurring donation" },
   "support.recurringText": {
-    et: "Loo oma internetipangas korduv makse meie annetuse andmetega — püsitoetusega ootavad sind mitmed boonused.",
-    en: "Set up a recurring transfer in your own online bank using our donation details — recurring donors get access to several exclusive perks."
+    et: "Mugavaim viis toetada pikaajaliselt — vali igakuine summa, Stripe hoolitseb ülejäänu eest kaardi või otsekorraldusega.",
+    en: "The easiest way to support us long-term — pick a monthly amount and Stripe takes care of the rest, by card or direct debit."
   },
-  "support.recurring5": { et: "5 €/kuus", en: "€5/month" },
-  "support.recurring10": { et: "10 €/kuus", en: "€10/month" },
-  "support.recurring20": { et: "20 €/kuus", en: "€20/month" },
+  "support.perMonth": { et: "/kuus", en: "/month" },
+  "support.recurringCtaShort": { et: "Alusta püsiannetust", en: "Start recurring donation" },
+  "support.recurringFineprint": {
+    et: "Turvaline makse Stripe kaudu. Tühista igal ajal Stripe kinnituskirjas olevalt lingilt.",
+    en: "Secure payment via Stripe. Cancel anytime from the link in your Stripe confirmation email."
+  },
+  "support.altBankSummary": { et: "Eelistad panga püsimakset ise seadistada?", en: "Prefer to set up a standing order yourself?" },
   "support.recurringStep1": { et: "Ava oma internetipank", en: "Open your online bank" },
   "support.recurringStep2": { et: "Loo uus püsimakse (otsekorraldus)", en: "Create a new recurring payment (standing order)" },
   "support.recurringStep3": { et: "Sisesta meie annetuse andmed", en: "Enter our donation details" },
   "support.recurringCta": { et: "Vaata pangaandmeid", en: "View bank details" },
 
-  "partners.badge": { et: "Organisatsioon", en: "Organization" },
+  "partners.badge": { et: "Asutused", en: "Organizations" },
   "partners.title": { et: "Teeme koostööd", en: "Let's work together" },
   "partners.p1": {
     et: "Hüppelauaga on 9 aasta jooksul koostööd teinud mitmed ettenägelikud ja väärtustepõhised organisatsioonid.",
@@ -284,11 +287,6 @@ var TRANSLATIONS = {
   "partners.tier3Benefit2": { et: "Ettevõtte eripreemia enda valitud meeskonnale", en: "Your own branded award for a team of your choice" },
   "partners.tier3Benefit3": { et: "Ainuõigus peapartneriks jääda järgmisel aastal", en: "First right of refusal to renew as Main Partner next year" },
 
-  "partners.tiersNote": {
-    et: "*Hinnad on suunavad — täpsustame koostöövormi koos kohtumisel.",
-    en: "*Prices are indicative — we'll tailor the details together."
-  },
-
   "buyout.badge": { et: "Koolidele ja ettevõtetele", en: "For schools and companies" },
   "buyout.title": { et: "Telli oma hoosloome", en: "Book your own Hoosloome" },
   "buyout.p1": {
@@ -302,7 +300,7 @@ var TRANSLATIONS = {
   "buyout.feature1": { et: "Täisformaat: ideest töötava prototüübini mõne päevaga", en: "Full format: from idea to working prototype in a few days" },
   "buyout.feature2": { et: "Meie kogenud mentorid ja korraldusmeeskond", en: "Our experienced mentors and organizing team" },
   "buyout.feature3": { et: "Teemad ja väljakutsed kohandatud vastavalt teie soovile", en: "Topics and challenges tailored to what you need" },
-  "buyout.cta": { et: "Küsi hinda", en: "Request a quote" },
+  "buyout.cta": { et: "Korraldame koos", en: "Request a quote" },
   "buyout.mailto": { et: "mailto:tere@huppelaud.eu?subject=Telli%20oma%20hoosloome", en: "mailto:tere@huppelaud.eu?subject=Book%20a%20Hoosloome" },
 
   "footer.address": { et: "Narva mnt 26, Tallinn, Eesti", en: "Narva mnt 26, Tallinn, Estonia" },
