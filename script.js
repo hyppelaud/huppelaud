@@ -150,6 +150,14 @@ var TRANSLATIONS = {
   "press.badge": { et: "Meedias", en: "In the news" },
   "press.cta": { et: "Loe lugu →", en: "Read the story →" },
 
+  "press.headline7": { et: "Hüppelaua noored võitsid Microsofti globaalsel häkatonil kaks auhinda", en: "Hüppelaud youth won two awards at Microsoft's global hackathon" },
+  "press.desc7": {
+    et: "Viis Hüppelaud 2026 osalejat said osa Microsoft Global Hackathon 2026-st MDCE-s — ja võtsid koju kaks auhinda.",
+    en: "Five Hüppelaud 2026 participants joined Microsoft Global Hackathon 2026 at MDCE — and took home two awards."
+  },
+  "press.photoAlt7": { et: "Hüppelaua noored koos Microsofti meeskonnaga häkatoni lõpetamise tähistamisel", en: "Hüppelaud youth celebrating with the Microsoft team at the end of the hackathon" },
+  "press.date7": { et: "28.09.2026", en: "28 September 2026" },
+
   "press.headline6": { et: "Häkatonile varasema kogemuseta – mida Hüppelaud mulle õpetas?", en: "No prior hackathon experience – what Hüppelaud taught me" },
   "press.desc6": {
     et: "Loe, mida kirjutab Laura Kalmus Märka last blogis oma esimesest Hüppelaua kogemusest.",
@@ -199,6 +207,7 @@ var TRANSLATIONS = {
   "press.dot4": { et: "Slaid 4", en: "Slide 4" },
   "press.dot5": { et: "Slaid 5", en: "Slide 5" },
   "press.dot6": { et: "Slaid 6", en: "Slide 6" },
+  "press.dot7": { et: "Slaid 7", en: "Slide 7" },
 
   "support.title": { et: "Toeta meid", en: "Support us" },
   "support.p1": {
@@ -409,6 +418,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function pressStart() {
+      pressStop();
       pressTimer = setInterval(function () { pressGoTo(pressIndex + 1); }, 5000);
     }
 
