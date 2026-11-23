@@ -60,7 +60,7 @@ var TRANSLATIONS = {
   "events.closeAria": { et: "Sulge", en: "Close" },
   "events.prevAria": { et: "Eelmine pilt", en: "Previous photo" },
   "events.nextAria": { et: "Järgmine pilt", en: "Next photo" },
-  "events.instagramPlug": { et: "Rohkem pilte? Jälgi meid Instagramis", en: "Want more photos? Follow us on Instagram" },
+  "events.instagramPlug": { et: "Rohkem pilte Instagramis", en: "Want more photos? Follow us on Instagram" },
 
   "events.showMore": { et: "Näita rohkem üritusi", en: "Show more events" },
   "events.showLess": { et: "Näita vähem", en: "Show less" },
@@ -139,16 +139,24 @@ var TRANSLATIONS = {
   "team.mihkel.tag2": { et: "Mentor 2024–2025", en: "Mentor 2024–2025" },
   "team.mihkel.tag3": { et: "Korraldaja alates 2026", en: "Organizer since 2026" },
   "team.mihkel.bio": {
-    et: "Hüppelaud muutis minu elu ja viis mind kokku startup-maailmaga. Osalesin ise 2018. ja 2019. aastal, olin mentor 2024. ja 2025. aastal ning alates 2026. aastast vean korraldusmeeskonda. Olen õppinud TUMis Saksamaal ja TU Delftis Hollandis, ehitanud mitut idufirmat ning kannan Wise'i „20 Under 20“ (2020) tiitlit. Igapäevaselt SYNLABis.",
+    et: "Hüppelaud muutis minu elu ja viis mind kokku startup-maailmaga. Osalesin ise 2018. ja 2019. aastal, olin mentor 2024. ja 2025. aastal ning alates 2026. aastast vean korraldusmeeskonda. Olen õppinud TUMis Saksamaal ja TU Delftis Hollandis, ehitanud mitut idufirmat ning kannan Wise'i „20 Under 20“ (2020) tiitlit. Töötan igapäevaselt SYNLABis.",
     en: "Hüppelaud changed my life and got me into startups. I took part myself in 2018 and 2019, mentored in 2024 and 2025, and have led the organizing team since 2026. I studied at TUM in Germany and TU Delft in the Netherlands, have helped build multiple startups, and am a Wise 20 Under 20 (2020) alumnus. I currently work at SYNLAB."
   },
   "team.mihkel.credentials": {
-    et: "TUM & TU Delft  ✳  Wise 20 Under 20 (2020)  ✳  Praegu SYNLABis",
+    et: "TUM & TU Delft  ✳  Wise 20 Under 20 (2020)",
     en: "TUM & TU Delft  ✳  Wise 20 Under 20 (2020)  ✳  Currently at SYNLAB"
   },
 
   "press.badge": { et: "Meedias", en: "In the news" },
   "press.cta": { et: "Loe lugu →", en: "Read the story →" },
+
+  "press.headline8": { et: "Hüppelaua õhtusöök tõi kokku korraldustiimi ja mentorid", en: "Hüppelaud dinner brought the organizing team and mentors together" },
+  "press.desc8": {
+    et: "12. novembril kogunes korraldustiim koos mentoritega Alto Restosse, et tähistada tänavust aastat ja tänada kõiki, kes on Hüppelaual aidanud kasvada.",
+    en: "On 12 November, the organizing team gathered with mentors at Alto Rest to celebrate the year and thank everyone who has helped Hüppelaud grow."
+  },
+  "press.photoAlt8": { et: "Hüppelaua korraldustiim ja mentorid õhtusöögil Alto Restos", en: "The Hüppelaud organizing team and mentors at dinner at Alto Rest" },
+  "press.date8": { et: "12.11.2026", en: "12 November 2026" },
 
   "press.headline7": { et: "Hüppelaua noored võitsid Microsofti globaalsel häkatonil kaks auhinda", en: "Hüppelaud youth won two awards at Microsoft's global hackathon" },
   "press.desc7": {
@@ -208,6 +216,7 @@ var TRANSLATIONS = {
   "press.dot5": { et: "Slaid 5", en: "Slide 5" },
   "press.dot6": { et: "Slaid 6", en: "Slide 6" },
   "press.dot7": { et: "Slaid 7", en: "Slide 7" },
+  "press.dot8": { et: "Slaid 8", en: "Slide 8" },
 
   "support.title": { et: "Toeta meid", en: "Support us" },
   "support.p1": {
